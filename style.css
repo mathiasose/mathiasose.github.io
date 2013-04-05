@@ -1,0 +1,23 @@
+/* 5grid */
+
+	.inner
+	{
+		padding: 2em;
+		line-height: 2em;
+	}
+
+	.inner :last-child
+	{
+		margin-bottom: 0;
+	}
+
+	.box
+	{
+		min-height: 60px;
+		background: #A19695;
+		box-shadow: inset 0px 0px 0px 1px #bbb;
+		border-radius: 5px;
+		margin-bottom: 2%;
+	}
+
+	.row { margin-top: 2%; }
