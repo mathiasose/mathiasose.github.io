@@ -19,6 +19,6 @@ span.redirect {
 	direction: rtl; 
 }
 
-img#moi {
+.shadow {
 	box-shadow: 0 3px 6px 0 #aaa;
 }
