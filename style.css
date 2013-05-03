@@ -6,6 +6,10 @@ body {
 	padding: 2em 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
 	font-size: xx-large;
 }
@@ -24,12 +28,14 @@ span.redirect {
 }
 
 #social a {
+    background-color: white;
     border: 1px solid black;
     color: black;
+    display: inline-block;
+    font-weight: bold;
     margin: 0.5em;
     padding: 0.5em;
     text-align: center;
-    text-decoration: none;
 }
 
 #social a:hover {
@@ -40,4 +46,9 @@ span.redirect {
 #social a:active {
 	color: orange;
 	box-shadow: 0 3px 6px 0 orange;
+}
+
+img#moi {
+	width: 100%;
+	max-width: 640px;
 }
