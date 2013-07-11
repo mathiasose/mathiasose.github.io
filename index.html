@@ -6,6 +6,7 @@
 			<meta name="description" content="" />
 			
 			<meta name="keywords" content="" />
+			<!--  <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
 			<script src="template/5grid/jquery.js"></script>
 			<script src="template/5grid/init.js?mobileUI=1"></script>
 			
@@ -40,13 +41,115 @@
 		<body>
 			<div class="5grid-layout">
 				<div class="row">
-					<div class="8u">
+					<div id="main" class="8u">
 						<h1>Mathias Ose</h1>
 						<p id="bio">
 							Student @ <a href="http://ntnu.no/studier/mtdt">NTNU</a>.
 						</p>
-						<div class="5grid">
-							<div id="social" class="row">
+						<a id="viewCV" href="#">View CV</a>
+						<script>
+							
+							(function($){
+								$.fn.moveTo = function(selector){
+									return this.each(function(){
+										var cl = $(this).clone();
+										$(cl).appendTo(selector);
+										$(this).remove();
+									});
+								};
+							})(jQuery);
+						
+							$(document).ready(function () {
+								$("#viewCV").show(0);
+								$("#cv").hide(0);
+							});						
+						
+							$("a#viewCV").click( function () {
+
+								$("#social").hide(1000);
+								$("#cv").toggle(2000, function () {
+								
+									
+									if ( $("#cv").css("display") == "none" ) {
+										$("#viewCV").html("View CV");
+										$("#social").moveTo("#main");
+									} else {
+										$("#viewCV").html("Close CV");
+										$('#social').moveTo('#sidebar');
+									}
+									
+									$("#social").show(1000);
+									
+								} );
+								
+							} );
+						</script>
+						<section id="cv">
+							<section id="contact">
+								<row>
+									<label>Address</label>
+									<info>Eirik Jarls gate 4, 7030 Trondheim</info>
+								</row>
+								<row>
+									<label>Date of birth</label>
+									<info>September 15th, 1992</info>
+								</row>
+								<row>
+									<label>Telephone</label>
+									<info>(+47) 41 26 83 91</info>
+								</row>
+								<row>
+									<label>E-mail</label>
+									<info>
+										<a href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;">&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;</a>
+									</info>
+								</row>
+							</section>
+							<section id="education">
+								<h2>Education</h2>
+								<row>
+									<info>
+										Spjelkavik videregående skole
+									</info>
+									<info>
+										International class
+									</info>
+									<info>
+										2008 - 2011
+									</info>
+								</row>
+								<row>
+									<info>
+										Agder folkehøgskole
+									</info>
+									<info>
+										Outdoor Life
+									</info>
+									<info>
+										2011 - 2012
+									</info>
+								</row>
+								<row>
+									<info>
+										NTNU
+									</info>
+									<info>
+										Datateknikk
+									</info>
+									<info>
+										2012 - present
+									</info>
+								</row>
+							</section>
+							<section id="experience">
+								<h2>Experience</h2>
+							</section>
+							<section id="qualifications">
+								<h2>Qualifications</h2>
+							</section>
+						</section>
+						<div id="social" class="5grid">
+							<div class="row">
 								<a class="2u icon-envelope"
 									title="e-mail"
 									href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;"
@@ -82,7 +185,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="4u">
+					<div id="sidebar" class="4u">
 						<img id="moi" class="shadow" src="img/moi.jpg" />
 					</div>
 				</div>
