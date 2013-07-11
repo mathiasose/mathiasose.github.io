@@ -1,0 +1,76 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+	padding: 2em 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+	font-size: xx-large;
+}
+
+h1, #bio, #social {
+	margin: 1em 0;
+}
+
+span.redirect { 
+	unicode-bidi:bidi-override; 
+	direction: rtl; 
+}
+
+.shadow {
+	box-shadow: 0 3px 6px 0 #aaa;
+}
+
+#social a {
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+	font-size: xx-large;
+
+	&:hover {
+		color: blue;
+	}
+
+	&:active {
+		color: orange;
+	}
+}
+
+img#moi {
+	width: 100%;
+	max-width: 640px;
+}
+
+#footer {
+    background-color: white;
+    border-top: 5px double darkgray;
+    color: black;
+    font-size: small;
+    margin-top: 1em;
+    padding: 0.5em;
+    position: absolute;
+    width: 99%;
+}
+
+/* mobile */
+body.is-mobile {
+	padding: .5em;
+	
+	#social a {
+		width: 12.5% !important;
+	}
+	
+	#moi {
+		display: none;
+	}
+	
+	h1, #bio {
+		text-align: center;
+	}
+}
