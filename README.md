@@ -1,1 +1,1 @@
-Source for my personal corner of the web.
+My playground for all things webdev.
