@@ -10,7 +10,7 @@
 		<script src="template/5grid/jquery.js"></script>
 		<script src="template/5grid/init.js?mobileUI=1"></script>
 		
-		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 		
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		
@@ -79,67 +79,68 @@
 		<div class="5grid-layout">
 			<div class="row">
 				<div id="main" class="8u">
-					<div id="mainhead">
-					<h1>Mathias Ose</h1>
-					<p id="bio">
-						Student @ <a href="http://ntnu.no/studier/mtdt">NTNU</a>.
-					</p>
-					<button id="viewCV" href="#" style="display:none;">
-						View CV
-						<script>
-							
-							var cv = false;
-							var fadeTime = 1500;
-							
-							(function($){
-								$.fn.moveTo = function(selector){
-									return this.each(function(){
-									var cl = $(this).clone();
-										$(cl).appendTo(selector);
-										$(this).remove();
-									});
-								};
-							})(jQuery);
+					<section id="header">
+						<h1>Mathias Ose</h1>
+						<p id="bio">
+							Student @ <a href="http://ntnu.no/studier/mtdt">NTNU</a>.
+						</p>
+						<button id="viewCV" href="#" style="display:none;">
+							View CV
+							<script>
+								
+								var cv = false;
+								var fadeTime = 1500;
+								
+								(function($){
+									$.fn.moveTo = function(selector){
+										return this.each(function(){
+										var cl = $(this).clone();
+											$(cl).appendTo(selector);
+											$(this).remove();
+										});
+									};
+								})(jQuery);
 
-							$(document).ready( function () {
+								$(document).ready( function () {
+										
+									$("#viewCV").show(0);
 									
-								$("#viewCV").show(0);
-								
-								var urlVarCV = $.getUrlVar('cv');
-								
-								if ( urlVarCV == 1 ) {
-									cv = true;
-									$("#social").moveTo("#sidebar");
-									$("#viewCV").html("Close CV");
-								} else {
-									$("#cv").hide(0);
-								}
-							});						
-						
-							$("#viewCV").click( function () {
-								
-								cv = !cv;
-
-								$("#cv").fadeOut(fadeTime);
-								$("#social").fadeOut(fadeTime).promise().done( function () {
-
-									if ( cv ) {
-										$("#cv").fadeIn(fadeTime);
+									var urlVarCV = $.getUrlVar('cv');
+									
+									if ( urlVarCV == 1 ) {
+										cv = true;
 										$("#social").moveTo("#sidebar");
 										$("#viewCV").html("Close CV");
 									} else {
-										$("#social").moveTo("#main");
-										$("#viewCV").html("View CV");
+										$("#cv").hide(0);
 									}
-									$("#social").hide(0).fadeIn(fadeTime);
+								});						
+							
+								$("#viewCV").click( function () {
 									
-								})
-							});
-						</script>
-					</button>
-					</div>
+									cv = !cv;
+
+									$("#cv").fadeOut(fadeTime);
+									$("#social").fadeOut(fadeTime).promise().done( function () {
+
+										if ( cv ) {
+											$("#cv").fadeIn(fadeTime);
+											$("#social").moveTo("#sidebar");
+											$("#viewCV").html("Close CV");
+										} else {
+											$("#social").moveTo("#main");
+											$("#viewCV").html("View CV");
+										}
+										$("#social").hide(0).fadeIn(fadeTime);
+										
+									})
+								});
+							</script>
+						</button>
+					</section>
 					<section id="cv">
-						CV not complete. Last updated: 11th of July, 2013.
+						CV not complete.<br />
+						Last updated: 112h of July, 2013.
 						<section id="contact">
 							<div class="row">
 								<label>Address</label>
@@ -212,8 +213,16 @@
 									<li>C/C++</li>
 									<li>C#</li>
 									<li>MediaWiki</li>
-									<li>Linux/Bash</li>
 									<li>git</li>
+									<li>Linux/Bash</li>
+									<li>Windows</li>
+								</ul>
+							</div>
+							<div class="row">
+								<label>Languages</label>
+								<ul>
+									<li>Norwegian</li>
+									<li>English</li>
 								</ul>
 							</div>
 							<div class="row">
