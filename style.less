@@ -1,3 +1,8 @@
+html {
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
+}
+
 body {
 	font-family: 'Noto Sans', sans-serif;
 	padding: 2em 0;
@@ -13,11 +18,6 @@ h1 {
 
 h1, #bio, #cv, #social {
 	margin: .5em 0;
-}
-
-span.redirect { 
-	unicode-bidi:bidi-override; 
-	direction: rtl; 
 }
 
 .shadow {
@@ -61,6 +61,7 @@ img#moi {
 /* cv */
 
 #viewCV {
+	cursor: pointer;
 	display: none;
 
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -98,7 +99,7 @@ img#moi {
 
 #cv {
 
-	label, section, row, info {
+	label, section, .row, info {
 		vertical-align: top;
 	}
 
@@ -112,15 +113,13 @@ img#moi {
 		margin: 1em 0;
 	}
 
-	row {
-		display: block;
-		
+	.row {
 		label, info {
 			display: inline-block;
 		}
 	}
 	
-	#contact row, #qualifications row {
+	#contact .row, #qualifications .row {
 		label {
 			width: 20%;
 		}
@@ -130,7 +129,7 @@ img#moi {
 		}
 	}
 	
-	#education row {
+	#education .row {
 
 		padding: 1em 0;
 		border-bottom: 1px dotted lightgray;
@@ -143,7 +142,7 @@ img#moi {
 			}
 		}
 	}
-	#qualifications row {
+	#qualifications .row {
 		margin-bottom: 1em;
 		
 		label, ul {
@@ -171,7 +170,7 @@ body.is-mobile {
 	#cv {
 		text-align: left;
 	
-		#contact row {
+		#contact .row {
 			label {
 				width: 30%;
 			}
@@ -181,7 +180,7 @@ body.is-mobile {
 			}
 		}
 		
-		#education row info {
+		#education .row info {
 			width: 25%;
 			font-size: small;
 			
@@ -190,7 +189,7 @@ body.is-mobile {
 			}
 		}
 		
-		#qualifications row {
+		#qualifications .row {
 
 			label {
 				width: 35%;
