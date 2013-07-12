@@ -95,7 +95,12 @@ img#moi {
 		top:1px;
 	}
 }
+
 #cv {
+
+	label, section, row, info {
+		vertical-align: top;
+	}
 
 	h2 {
 		margin: 1em 0;
@@ -115,13 +120,13 @@ img#moi {
 		}
 	}
 	
-	#contact row {
+	#contact row, #qualifications row {
 		label {
 			width: 20%;
 		}
 		
-		info {
-			width: 79%
+		info, ul {
+			width: 75%
 		}
 	}
 	
@@ -131,25 +136,18 @@ img#moi {
 		border-bottom: 1px dotted lightgray;
 	
 		info {
-			width: 20%;
+			width: 25%;
 			
 			&:first-child {
-				width: 40%;
+				width: 35%;
 			}
 		}
 	}
 	#qualifications row {
+		margin-bottom: 1em;
+		
 		label, ul {
 			display: inline-block;
-			vertical-align: top;
-		}
-		
-		label {
-			width: 20%;
-		}
-		
-		ul {
-			width: 70%;
 		}
 	}
 }
@@ -172,5 +170,35 @@ body.is-mobile {
 	
 	#cv {
 		text-align: left;
+	
+		#contact row {
+			label {
+				width: 30%;
+			}
+			
+			info {
+				width: 65%
+			}
+		}
+		
+		#education row info {
+			width: 25%;
+			font-size: small;
+			
+			&:first-child {
+				width: 35%;
+			}
+		}
+		
+		#qualifications row {
+
+			label {
+				width: 35%;
+			}
+			
+			ul, info {
+				width: 60%;
+			}
+		}
 	}
 }
