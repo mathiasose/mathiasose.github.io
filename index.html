@@ -121,6 +121,7 @@
 									cv = !cv;
 
 									$("#cv").fadeOut(fadeTime);
+									$("#footer").fadeOut(fadeTime);
 									$("#social").fadeOut(fadeTime).promise().done( function () {
 
 										if ( cv ) {
@@ -128,10 +129,11 @@
 											$("#social").moveTo("#sidebar");
 											$("#viewCV").html("Close CV");
 										} else {
-											$("#social").moveTo("#main");
+											$("#social").moveTo("#header");
 											$("#viewCV").html("View CV");
 										}
 										$("#social").hide(0).fadeIn(fadeTime);
+										$("#footer").hide(0).fadeIn(fadeTime);
 										
 									})
 								});
@@ -231,7 +233,7 @@
 							</div>
 						</section>
 					</section>
-					<div id="social" class="5grid">
+					<section id="social" class="5grid">
 						<div class="row">
 							<a class="2u icon-envelope"
 								title="e-mail"
@@ -258,15 +260,24 @@
 								title="StackExchange"
 								href="http://stackexchange.com/users/2655020/mathias-ose"></a>
 						</div>
-					</div>
+					</section>
+					<section id="footer">
+						Credits to:
+						<a href="http://n33.co/files/5grid/docs/#license">5grid by n33</a> &dash;
+						<a href="http://www.google.com/fonts/specimen/Oxygen">Oxygen font</a> &dash;
+						<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> &dash;
+						<a href="http://www.devslide.com/labs/browser-detection">Browser detection</a> &dash;
+						<a href="http://jquery.com/">jQuery</a> &dash;
+						<a href="http://lesscss.org/">LESS CSS</a>
+						<br />
+						<a href="https://github.com/mathiasose/ma.thiaso.se">View website source on github</a>
+					</section>
 				</div>
+				
 				<div id="sidebar" class="4u">
 					<img id="moi" class="shadow" src="img/moi.jpg" />
 				</div>
 			</div>
 		</div>
-		<!-- <div id="footer">
-			Credits to: <a href="http://n33.co/files/5grid/docs/#license">5grid by n33</a>
-		</div> -->
 	</body>
 </html>
