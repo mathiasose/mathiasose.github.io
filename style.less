@@ -99,12 +99,12 @@ img#moi {
 
 #cv {
 
-	label, section, .row, info {
+	label, section, .row, .info {
 		vertical-align: top;
 	}
 
 	h2 {
-		margin: 1em 0;
+		margin-top: 1em;
 		font-size: x-large;
 		border-bottom: 1px solid black;
 	}
@@ -114,7 +114,7 @@ img#moi {
 	}
 
 	.row {
-		label, info {
+		label, .info {
 			display: inline-block;
 		}
 	}
@@ -124,7 +124,7 @@ img#moi {
 			width: 20%;
 		}
 		
-		info, ul {
+		.info, ul {
 			width: 75%
 		}
 	}
@@ -134,7 +134,8 @@ img#moi {
 		padding: 1em 0;
 		border-bottom: 1px dotted lightgray;
 	
-		info {
+		.info {
+			display: inline-block;
 			width: 25%;
 			
 			&:first-child {
@@ -143,7 +144,7 @@ img#moi {
 		}
 	}
 	#qualifications .row {
-		margin-bottom: 1em;
+		margin-top: 1em;
 		
 		label, ul {
 			display: inline-block;
@@ -175,12 +176,12 @@ body.is-mobile {
 				width: 30%;
 			}
 			
-			info {
+			.info {
 				width: 65%
 			}
 		}
 		
-		#education .row info {
+		#education .row .info {
 			width: 25%;
 			font-size: small;
 			
@@ -195,7 +196,7 @@ body.is-mobile {
 				width: 35%;
 			}
 			
-			ul, info {
+			ul, .info {
 				width: 60%;
 			}
 		}

@@ -1,268 +1,260 @@
 <!DOCTYPE HTML>
-	<html>
-		<head>
-			<title>Mathias Ose</title>
-			<meta http-equiv="content-type" content="text/html" charset="utf-8" />
-			<meta name="description" content="" />
-			
-			<meta name="keywords" content="" />
-			<!--  <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
-			<script src="template/5grid/jquery.js"></script>
-			<script src="template/5grid/init.js?mobileUI=1"></script>
-			
-			<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-			
-			<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-			
-			<link rel="stylesheet" type="text/css" href="reset.css" />
-			<link rel="stylesheet" type="text/css" href="style.css" />
+<html>
+	<head>
+		<title>Mathias Ose</title>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<meta name="description" content="" />
+		
+		<meta name="keywords" content="" />
+		<!--  <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+		<script src="template/5grid/jquery.js"></script>
+		<script src="template/5grid/init.js?mobileUI=1"></script>
+		
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 
-			<noscript>
-				<style>
-					#social, #moi { display: none; }
-					#noscript-warning {
-						background-color: yellow;
-						color: red;
-						font-size: large;
-						margin-top: -2em;
-						padding: 1em 0;
-						text-align: center;
+		<noscript>
+			<style>
+				#social, #moi { display: none; }
+				#noscript-warning {
+					background-color: yellow;
+					color: red;
+					font-size: large;
+					margin-top: -2em;
+					padding: 1em 0;
+					text-align: center;
+				}
+			</style>
+		</noscript>
+
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-40375801-1', 'thiaso.se');
+			ga('send', 'pageview');
+		</script>
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="http://www.devslide.com/public/labs/browser-detection/browser-detection.css" />
+		<script type="text/javascript" src="http://www.devslide.com/public/labs/browser-detection/browser-detection.js">
+		<script type="text/javascript">
+		<!--
+		var noticeLang = "goofy";
+		// -->
+		</script>
+		
+		<script>
+			$.extend({
+				getUrlVars: function(){
+					var vars = [], hash;
+					var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+					for(var i = 0; i < hashes.length; i++) {
+						hash = hashes[i].split('=');
+						vars.push(hash[0]);
+						vars[hash[0]] = hash[1];
 					}
-				</style>
-			</noscript>
+					return vars;
+				},
+				getUrlVar: function(name) {
+					return $.getUrlVars()[name];
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<noscript>
+			<div id="noscript-warning">
+				This page is going to look and work much better if you enable JavaScript.
+			</div>
+		</noscript>
+		<div class="5grid-layout">
+			<div class="row">
+				<div id="main" class="8u">
+					<h1>Mathias Ose</h1>
+					<p id="bio">
+						Student @ <a href="http://ntnu.no/studier/mtdt">NTNU</a>.
+					</p>
+					<button id="viewCV" href="#" style="display:none;">
+						View CV
+						<script>
+							
+							var cv = false;
+							var fadeTime = 1500;
+							
+							(function($){
+								$.fn.moveTo = function(selector){
+									return this.each(function(){
+									var cl = $(this).clone();
+										$(cl).appendTo(selector);
+										$(this).remove();
+									});
+								};
+							})(jQuery);
 
-			<link rel="shortcut icon" href="img/favicon.ico" />
-			
-			<script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-				ga('create', 'UA-40375801-1', 'thiaso.se');
-				ga('send', 'pageview');
-			</script>
-			
-			<link rel="stylesheet" type="text/css" media="screen" href="http://www.devslide.com/public/labs/browser-detection/browser-detection.css" />
-			<script type="text/javascript" src="http://www.devslide.com/public/labs/browser-detection/browser-detection.js">
-			<script type="text/javascript">
-			<!--
-			var noticeLang = "goofy";
-			// -->
-			</script>
-			
-			<script>
-				$.extend({
-					getUrlVars: function(){
-						var vars = [], hash;
-						var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-						for(var i = 0; i < hashes.length; i++) {
-							hash = hashes[i].split('=');
-							vars.push(hash[0]);
-							vars[hash[0]] = hash[1];
-						}
-						return vars;
-					},
-					getUrlVar: function(name) {
-						return $.getUrlVars()[name];
-					}
-				});
-			</script>
-		</head>
-		<body>
-			<noscript>
-				<div id="noscript-warning">
-					This page is going to look and work much better if you enable JavaScript.
-				</div>
-			</noscript>
-			<div class="5grid-layout">
-				<div class="row">
-					<div id="main" class="8u">
-						<h1>Mathias Ose</h1>
-						<p id="bio">
-							Student @ <a href="http://ntnu.no/studier/mtdt">NTNU</a>.
-						</p>
-						<button id="viewCV" href="#" style="display:none;">
-							View CV
-							<script>
-								
-								var cv = false;
-								var fadeTime = 1500;
-								
-								(function($){
-									$.fn.moveTo = function(selector){
-										return this.each(function(){
-										var cl = $(this).clone();
-											$(cl).appendTo(selector);
-											$(this).remove();
-										});
-									};
-								})(jQuery);
-
-								$(document).ready( function () {
-										
-									$("#viewCV").show(0);
+							$(document).ready( function () {
 									
-									var urlVarCV = $.getUrlVar('cv');
-									
-									if ( urlVarCV == 1 ) {
-										cv = true;
+								$("#viewCV").show(0);
+								
+								var urlVarCV = $.getUrlVar('cv');
+								
+								if ( urlVarCV == 1 ) {
+									cv = true;
+									$("#social").moveTo("#sidebar");
+									$("#viewCV").html("Close CV");
+								} else {
+									$("#cv").hide(0);
+								}
+							});						
+						
+							$("#viewCV").click( function () {
+								
+								cv = !cv;
+
+								$("#cv").fadeOut(fadeTime);
+								$("#social").fadeOut(fadeTime).promise().done( function () {
+
+									if ( cv ) {
+										$("#cv").fadeIn(fadeTime);
 										$("#social").moveTo("#sidebar");
 										$("#viewCV").html("Close CV");
 									} else {
-										$("#cv").hide(0);
+										$("#social").moveTo("#main");
+										$("#viewCV").html("View CV");
 									}
-								});						
-							
-								$("#viewCV").click( function () {
+									$("#social").hide(0).fadeIn(fadeTime);
 									
-									cv = !cv;
-
-									$("#cv").fadeOut(fadeTime);
-									$("#social").fadeOut(fadeTime).promise().done( function () {
-
-										if ( cv ) {
-											$("#cv").fadeIn(fadeTime);
-											$("#social").moveTo("#sidebar");
-											$("#viewCV").html("Close CV");
-										} else {
-											$("#social").moveTo("#main");
-											$("#viewCV").html("View CV");
-										}
-										$("#social").hide(0).fadeIn(fadeTime);
-										
-									})
-								});
-							</script>
-						</button>
-						<section id="cv">
-							CV not complete. Last updated: 11th of July, 2013.
-							<section id="contact">
-								<div class="row">
-									<label>Address</label>
-									<info>Eirik Jarls gate 4, 7030 Trondheim</info>
-								</div>
-								<div class="row">
-									<label>Date of birth</label>
-									<info>September 15th, 1992</info>
-								</div>
-								<div class="row">
-									<label>Telephone</label>
-									<info>(+47) 41 26 83 91</info>
-								</div>
-								<div class="row">
-									<label>E-mail</label>
-									<info>
-										<a href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;">&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;</a>
-									</info>
-								</div>
-							</section>
-							<section id="education">
-								<h2>Education</h2>
-								<div class="row">
-									<info>
-										Spjelkavik videregående skole
-									</info>
-									<info>
-										International class
-									</info>
-									<info>
-										2008 - 2011
-									</info>
-								</div>
-								<div class="row">
-									<info>
-										Agder folkehøgskole
-									</info>
-									<info>
-										Outdoor Life
-									</info>
-									<info>
-										2011 - 2012
-									</info>
-								</div>
-								<div class="row">
-									<info>
-										NTNU
-									</info>
-									<info>
-										Computer Science
-									</info>
-									<info>
-										2012 - present
-									</info>
-								</div>
-							</section>
-							<!-- <section id="experience">
-								<h2>Experience</h2>
-							</section> -->
-							<section id="qualifications">
-								<h2>Qualifications</h2>
-								<div class="row">
-									<label>Technologies</label>
-									<ul>
-										<li>HTML</li>
-										<li>CSS/LESS</li>
-										<li>JavaScript/jQuery</li>
-										<li>Python</li>
-										<li>Java</li>
-										<li>C/C++</li>
-										<li>C#</li>
-										<li>MediaWiki</li>
-										<li>Linux/Bash</li>
-										<li>git</li>
-									</ul>
-								</div>
-								<div class="row">
-									<label>Driving license</label>
-									<info>Class B</info>
-								</div>
-							</section>
-						</section>
-						<div id="social" class="5grid">
+								})
+							});
+						</script>
+					</button>
+					<section id="cv">
+						CV not complete. Last updated: 11th of July, 2013.
+						<section id="contact">
 							<div class="row">
-								<a class="2u icon-envelope"
-									title="e-mail"
-									href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;"
-								></a>
-								<a class="2u icon-skype"
-									title="Skype"
-									href="skype:mathiasose"
-								></a>
-								<a class="2u icon-facebook"
-									title="Facebook"
-									href="https://www.facebook.com/oseose"
-								></a>
-								<a class="2u icon-google-plus"
-									title="Google+"
-									href="https://plus.google.com/u/0/113572178442664012994/"
-								></a>
-								<a class="2u icon-twitter"
-									title="Twitter"
-									href="https://twitter.com/Oseose"
-								></a>
-								<a class="2u icon-linkedin"
-									title="LinkedIn"
-									href="http://www.linkedin.com/pub/mathias-ose/66/bb4/452"
-								></a>
-								<a class="2u icon-github"
-									title="github"
-									href="https://github.com/mathiasose"
-								></a>
-								<a class="2u icon-stackexchange"
-									title="StackExchange"
-									href="http://stackexchange.com/users/2655020/mathias-ose"
-								></a>
+								<label>Address</label>
+								<span class="info">Eirik Jarls gate 4, 7030 Trondheim</span>
 							</div>
+							<div class="row">
+								<label>Date of birth</label>
+								<span class="info">September 15th, 1992</span>
+							</div>
+							<div class="row">
+								<label>Telephone</label>
+								<span class="info">(+47) 41 26 83 91</span>
+							</div>
+							<div class="row">
+								<label>E-mail</label>
+								<span class="info">
+									<a href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;">&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;</a>
+								</span>
+							</div>
+						</section>
+						<section id="education">
+							<h2>Education</h2>
+							<div class="row">
+								<span class="info">
+									Spjelkavik videregående skole
+								</span>
+								<span class="info">
+									International class
+								</span>
+								<span class="info">
+									2008 - 2011
+								</span>
+							</div>
+							<div class="row">
+								<span class="info">
+									Agder folkehøgskole
+								</span>
+								<span class="info">
+									Outdoor Life
+								</span>
+								<span class="info">
+									2011 - 2012
+								</span>
+							</div>
+							<div class="row">
+								<span class="info">
+									NTNU
+								</span>
+								<span class="info">
+									Computer Science
+								</span>
+								<span class="info">
+									2012 - present
+								</span>
+							</div>
+						</section>
+						<!-- <section id="experience">
+							<h2>Experience</h2>
+						</section> -->
+						<section id="qualifications">
+							<h2>Qualifications</h2>
+							<div class="row">
+								<label>Technologies</label>
+								<ul>
+									<li>HTML</li>
+									<li>CSS/LESS</li>
+									<li>JavaScript/jQuery</li>
+									<li>Python</li>
+									<li>Java</li>
+									<li>C/C++</li>
+									<li>C#</li>
+									<li>MediaWiki</li>
+									<li>Linux/Bash</li>
+									<li>git</li>
+								</ul>
+							</div>
+							<div class="row">
+								<label>Driving license</label>
+								<span class="info">Class B</span>
+							</div>
+						</section>
+					</section>
+					<div id="social" class="5grid">
+						<div class="row">
+							<a class="2u icon-envelope"
+								title="e-mail"
+								href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;"></a>
+							<a class="2u icon-skype"
+								title="Skype"
+								href="skype:mathiasose"></a>
+							<a class="2u icon-facebook"
+								title="Facebook"
+								href="https://www.facebook.com/oseose"></a>
+							<a class="2u icon-google-plus"
+								title="Google+"
+								href="https://plus.google.com/u/0/113572178442664012994/"></a>
+							<a class="2u icon-twitter"
+								title="Twitter"
+								href="https://twitter.com/Oseose"></a>
+							<a class="2u icon-linkedin"
+								title="LinkedIn"
+								href="http://www.linkedin.com/pub/mathias-ose/66/bb4/452"></a>
+							<a class="2u icon-github"
+								title="github"
+								href="https://github.com/mathiasose"></a>
+							<a class="2u icon-stackexchange"
+								title="StackExchange"
+								href="http://stackexchange.com/users/2655020/mathias-ose"></a>
 						</div>
 					</div>
-					<div id="sidebar" class="4u">
-						<img id="moi" class="shadow" src="img/moi.jpg" />
-					</div>
+				</div>
+				<div id="sidebar" class="4u">
+					<img id="moi" class="shadow" src="img/moi.jpg" />
 				</div>
 			</div>
-			<!-- <div id="footer">
-				Credits to: <a href="http://n33.co/files/5grid/docs/#license">5grid by n33</a>
-			</div> -->
-		</body>
-	</html>
+		</div>
+		<!-- <div id="footer">
+			Credits to: <a href="http://n33.co/files/5grid/docs/#license">5grid by n33</a>
+		</div> -->
+	</body>
+</html>
