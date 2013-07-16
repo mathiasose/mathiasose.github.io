@@ -1,3 +1,8 @@
+@background: #FFFFFF;
+@primary: #000000;
+@secondary: #555555;
+@active: #FF0000;
+
 html {
   overflow: -moz-scrollbars-vertical; 
   overflow-y: scroll;
@@ -10,6 +15,10 @@ body {
 
 a {
     text-decoration: none;
+
+	&:active {
+		color: @active;
+	}
 }
 
 h1 {
@@ -25,11 +34,11 @@ h1, #bio, #cv, #social {
 }
 
 .shadow {
-	box-shadow: 0 3px 6px 0 #aaa;
+	box-shadow: 0 3px 6px 0 @secondary;
 }
 
 #social a {
-    color: #000000;
+    color: @primary;
     display: inline-block;
     font-weight: bold;
     margin: 0.5em;
@@ -38,11 +47,11 @@ h1, #bio, #cv, #social {
 	font-size: xx-large;
 
 	&:hover {
-		color: blue;
+		color: @secondary;
 	}
 
 	&:active {
-		color: red;
+		color: @active;
 	}
 }
 
@@ -56,9 +65,9 @@ img#moi {
 }
 
 #footer {
-    background-color: #FFFFFF;
-    border-top: 5px double #000000;
-    color: #000000;
+    background-color: @background;
+    border-top: 5px double @primary;
+    color: @primary;
     font-size: small;
     margin-top: 1em;
     padding: 0.5em;
@@ -66,30 +75,25 @@ img#moi {
 	margin: 3em 0;
 }
 
-#footer a {
-
-}
-
 /* cv */
 
 #viewCV {
 	.shadow;
 	display: none;
-	background-color: #000000;
-	border: 1px solid #000000;
+	background-color: @primary;
+	border: 1px solid @primary;
 	margin: 1em 0;
 	padding: 1em 3em;
-	color: white;
+	color: @background;
 	font-weight: bold;
 	
 	&:hover {
-		background-color: #555555;
-		border-color: #555555;
+		background-color: @secondary;
+		border-color: @secondary;
 	}
 	
 	&:active {
-		color: red;
-		border-color: red;
+		color: @active;
 	}
 }
 
@@ -102,7 +106,7 @@ img#moi {
 	h2 {
 		margin-top: 1em;
 		font-size: x-large;
-		border-bottom: 1px solid #000000;
+		border-bottom: 1px solid @primary;
 	}
 	
 	section {
@@ -128,7 +132,7 @@ img#moi {
 	#education .row {
 
 		padding: 1em 0;
-		border-bottom: 1px dotted lightgray;
+		border-bottom: 1px dotted @secondary;
 	
 		.info {
 			display: inline-block;

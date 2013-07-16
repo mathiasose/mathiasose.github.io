@@ -2,73 +2,30 @@
 <html>
 	<head>
 		<title>Mathias Ose</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
 		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
-		<meta name="description" content="" />
 		
-		<meta name="keywords" content="" />
+		<meta name="description" content="Mathias Ose" />
+		<meta name="keywords" content="Mathias Ose" />
+
 		<!--  <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
 		<script src="template/5grid/jquery.js"></script>
 		<script src="template/5grid/init.js?mobileUI=1"></script>
 		
-		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+		<script src="JS/switchView.js"></script>
+		<script src="JS/Google Analytics.js"></script>
+		
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oxygen' type='text/css'>
 		
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		
-		<link rel="stylesheet" type="text/css" href="reset.css" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" type="text/css" href="print.css" media="print" />
-
+		<link rel="stylesheet" type="text/css" href="CSS/reset.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/print.css" media="print" />
+		
 		<noscript>
-			<style>
-				#social, #moi { display: none; }
-				#noscript-warning {
-					background-color: yellow;
-					color: red;
-					font-size: large;
-					margin-top: -2em;
-					padding: 1em 0;
-					text-align: center;
-				}
-			</style>
+			<link rel="stylesheet" type="text/css" href="CSS/noscript.css" />
 		</noscript>
-
-		<link rel="shortcut icon" href="img/favicon.ico" />
-		
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-40375801-1', 'thiaso.se');
-			ga('send', 'pageview');
-		</script>
-		
-		<link rel="stylesheet" type="text/css" media="screen" href="http://www.devslide.com/public/labs/browser-detection/browser-detection.css" />
-		<script type="text/javascript" src="http://www.devslide.com/public/labs/browser-detection/browser-detection.js">
-		<script type="text/javascript">
-		<!--
-		var noticeLang = "goofy";
-		// -->
-		</script>
-		
-		<script>
-			$.extend({
-				getUrlVars: function(){
-					var vars = [], hash;
-					var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-					for(var i = 0; i < hashes.length; i++) {
-						hash = hashes[i].split('=');
-						vars.push(hash[0]);
-						vars[hash[0]] = hash[1];
-					}
-					return vars;
-				},
-				getUrlVar: function(name) {
-					return $.getUrlVars()[name];
-				}
-			});
-		</script>
 	</head>
 	<body>
 		<noscript>
@@ -86,58 +43,6 @@
 						</p>
 						<button id="viewCV" href="#" style="display:none;">
 							View CV
-							<script>
-								
-								var cv = false;
-								var fadeTime = 1500;
-								
-								(function($){
-									$.fn.moveTo = function(selector){
-										return this.each(function(){
-										var cl = $(this).clone();
-											$(cl).appendTo(selector);
-											$(this).remove();
-										});
-									};
-								})(jQuery);
-
-								$(document).ready( function () {
-										
-									$("#viewCV").show(0);
-									
-									var urlVarCV = $.getUrlVar('cv');
-									
-									if ( urlVarCV == 1 ) {
-										cv = true;
-										$("#social").moveTo("#sidebar");
-										$("#viewCV").html("Close CV");
-									} else {
-										$("#cv").hide(0);
-									}
-								});						
-							
-								$("#viewCV").click( function () {
-									
-									cv = !cv;
-
-									$("#cv").fadeOut(fadeTime);
-									$("#footer").fadeOut(fadeTime);
-									$("#social").fadeOut(fadeTime).promise().done( function () {
-
-										if ( cv ) {
-											$("#cv").fadeIn(fadeTime);
-											$("#social").moveTo("#sidebar");
-											$("#viewCV").html("Close CV");
-										} else {
-											$("#social").moveTo("#header");
-											$("#viewCV").html("View CV");
-										}
-										$("#social").hide(0).fadeIn(fadeTime);
-										$("#footer").hide(0).fadeIn(fadeTime);
-										
-									})
-								});
-							</script>
 						</button>
 					</section>
 					<section id="cv">
@@ -237,28 +142,36 @@
 						<div class="row">
 							<a class="2u icon-envelope"
 								title="e-mail"
-								href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;"></a>
+								href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;"
+							></a>
 							<a class="2u icon-skype"
 								title="Skype"
-								href="skype:mathiasose"></a>
+								href="skype:mathiasose"
+							></a>
 							<a class="2u icon-facebook"
 								title="Facebook"
-								href="https://www.facebook.com/oseose"></a>
+								href="https://www.facebook.com/oseose"
+							></a>
 							<a class="2u icon-google-plus"
 								title="Google+"
-								href="https://plus.google.com/u/0/113572178442664012994/"></a>
+								href="https://plus.google.com/u/0/113572178442664012994/"
+							></a>
 							<a class="2u icon-twitter"
 								title="Twitter"
-								href="https://twitter.com/Oseose"></a>
+								href="https://twitter.com/Oseose"
+							></a>
 							<a class="2u icon-linkedin"
 								title="LinkedIn"
-								href="http://www.linkedin.com/pub/mathias-ose/66/bb4/452"></a>
+								href="http://www.linkedin.com/pub/mathias-ose/66/bb4/452"
+							></a>
 							<a class="2u icon-github"
 								title="github"
-								href="https://github.com/mathiasose"></a>
+								href="https://github.com/mathiasose"
+							></a>
 							<a class="2u icon-stackexchange"
 								title="StackExchange"
-								href="http://stackexchange.com/users/2655020/mathias-ose"></a>
+								href="http://stackexchange.com/users/2655020/mathias-ose"
+							></a>
 						</div>
 					</section>
 					<section id="footer">
@@ -266,17 +179,15 @@
 						<a href="http://n33.co/files/5grid/docs/#license">5grid by n33</a> &dash;
 						<a href="http://www.google.com/fonts/specimen/Oxygen">Oxygen font</a> &dash;
 						<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> &dash;
-						<a href="http://www.devslide.com/labs/browser-detection">Browser detection</a> &dash;
 						<a href="http://jquery.com/">jQuery</a> &dash;
 						<a href="http://lesscss.org/">LESS CSS</a>
 						<br />
 						<a href="https://github.com/mathiasose/ma.thiaso.se">View website source on github</a>
 					</section>
 				</div>
-				
-				<div id="sidebar" class="4u">
+				<section id="sidebar" class="4u">
 					<img id="moi" class="shadow" src="img/moi.jpg" />
-				</div>
+				</section>
 			</div>
 		</div>
 	</body>
