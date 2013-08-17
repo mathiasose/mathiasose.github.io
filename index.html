@@ -11,24 +11,19 @@
 		<!--  <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
 		<script src="template/5grid/jquery.js"></script>
 		<script src="template/5grid/init.js?mobileUI=1"></script>
-		
 		<script src="JS/switchView.js"></script>
 		<script src="JS/Google Analytics.js"></script>
 		
 		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oxygen' type='text/css'>
-		
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-		
 		<link rel="stylesheet" type="text/css" href="CSS/reset.css" />
 		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/mobile.css" media="print" />
 		<link rel="stylesheet" type="text/css" href="CSS/print.css" media="print" />
-		
-		<noscript>
-			<link rel="stylesheet" type="text/css" href="CSS/noscript.css" />
-		</noscript>
 	</head>
 	<body>
 		<noscript>
+			<link rel="stylesheet" type="text/css" href="CSS/noscript.css" />
 			<div id="noscript-warning">
 				This page is going to look and work much better if you enable JavaScript.
 			</div>
@@ -46,8 +41,7 @@
 						</button>
 					</section>
 					<section id="cv">
-						CV not complete.<br />
-						Last updated: 13th of July, 2013.
+						CV not complete. Last updated: 17th of August, 2013.
 						<section id="contact">
 							<div class="row">
 								<label>Address</label>
@@ -71,46 +65,54 @@
 						<section id="education">
 							<h2>Education</h2>
 							<div class="row">
-								<span class="info">
-									Spjelkavik videregående skole
-								</span>
-								<span class="info">
-									International class
-								</span>
-								<span class="info">
-									2008 - 2011
-								</span>
+								<h3>
+									<a href="http://spjelkavik.vgs.no/">
+										Spjelkavik videregående skole
+									</a>
+								</h3>
+								<span class="info">International class</span>
+								<span class="info">2008 - 2011</span>
 							</div>
 							<div class="row">
-								<span class="info">
-									Agder folkehøgskole
-								</span>
-								<span class="info">
-									Outdoor Life
-								</span>
-								<span class="info">
-									2011 - 2012
-								</span>
+								<h3>
+									<a href="http://agder.fhs.no/">
+										Agder folkehøgskole
+									</a>
+								</h3>
+								<span class="info">Outdoor Life</span>
+								<span class="info">2011 - 2012</span>
 							</div>
 							<div class="row">
+								<h3>NTNU</h3>
 								<span class="info">
-									NTNU
+									<a href="http://www.ntnu.edu/studies/mtdt">
+										Computer Science
+									</a>
 								</span>
-								<span class="info">
-									Computer Science
-								</span>
-								<span class="info">
-									2012 - present
-								</span>
+								<span class="info">2012 - present</span>
+								<div class="additional">
+									<h4>Passed courses</h4>
+									<ul id="courses">
+										<li><span class="title">TDT4110</span>	Information Technology, Introduction</li>
+										<li><span class="title">TDT4100</span>	Object-Oriented Programming</li>
+										<!--<li><span class="title">TDT4102*</span>	Procedural and Object-Oriented Programming</li>-->
+										<li><span class="title">TMA4140</span>	Discrete Mathematics</li>
+										<li><span class="title">TMA4100</span>	Calculus 1</li>
+										<li><span class="title">TMA4115</span>	Calculus 3</li>
+										<li><span class="title">TFE4110</span>	Digital Design and Basic Electrical Circuits</li>
+										<li><span class="title">TFY4125</span>	Physics</li>
+										<li><span class="title">EXPH0001</span>	Philosophy</li>
+									</ul>
+								</div>
 							</div>
 						</section>
 						<!-- <section id="experience">
 							<h2>Experience</h2>
 						</section> -->
 						<section id="qualifications">
-							<h2>Qualifications</h2>
+							<h2>Other qualifications</h2>
 							<div class="row">
-								<label>Technologies</label>
+								<label>Familliar technologies</label>
 								<ul>
 									<li>HTML</li>
 									<li>CSS/LESS</li>
@@ -126,7 +128,7 @@
 								</ul>
 							</div>
 							<div class="row">
-								<label>Languages</label>
+								<label>Fluent languages</label>
 								<ul>
 									<li>Norwegian</li>
 									<li>English</li>
@@ -136,6 +138,9 @@
 								<label>Driving license</label>
 								<span class="info">Class B</span>
 							</div>
+						</section>
+						<section id="print">
+							<button onclick="window.print(); return false;">Print CV</button>
 						</section>
 					</section>
 					<section id="social" class="5grid">

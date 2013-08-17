@@ -34,6 +34,7 @@ $.extend({
 $(document).ready( function () {
 		
 	$("#viewCV").show(0);
+	$("#print button").show(0);
 	
 	var urlVarCV = $.getUrlVar('cv');
 	

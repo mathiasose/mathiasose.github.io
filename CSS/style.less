@@ -3,6 +3,18 @@
 @secondary: #555555;
 @active: #FF0000;
 
+.border-bottom {
+	border-bottom: 1px dotted @secondary;
+}
+
+.col1 {
+	width: 25%;
+}
+
+.col2 {
+	width: 70%;
+}
+
 html {
   overflow: -moz-scrollbars-vertical; 
   overflow-y: scroll;
@@ -29,7 +41,7 @@ h1, #bio, #cv, #social {
 	margin: .5em 0;
 }
 
-#header {
+#header, #print {
 	text-align: center;
 }
 
@@ -75,9 +87,7 @@ img#moi {
 	margin: 3em 0;
 }
 
-/* cv */
-
-#viewCV {
+button {
 	.shadow;
 	display: none;
 	background-color: @primary;
@@ -96,6 +106,8 @@ img#moi {
 		color: @active;
 	}
 }
+
+/* cv */
 
 #cv {
 
@@ -121,25 +133,38 @@ img#moi {
 	
 	#contact .row, #qualifications .row {
 		label {
-			width: 20%;
+			.col1;
 		}
 		
 		.info, ul {
-			width: 75%
+			.col2;
 		}
 	}
 	
-	#education .row {
-
-		padding: 1em 0;
-		border-bottom: 1px dotted @secondary;
-	
-		.info {
-			display: inline-block;
-			width: 25%;
+	#education {
+		.row {
+			.border-bottom;
+			padding: 1em 0;
 			
-			&:first-child {
-				width: 35%;
+			h3 {
+				font-weight: bold;
+			}
+		
+			.info {
+				display: inline-block;
+				.col1;
+			}
+		}
+		.additional {
+			h4 {
+				margin-top: 1em;
+				font-weight: bold;
+			}
+			#courses {
+				.title {
+					display: inline-block;
+					.col1;
+				}
 			}
 		}
 	}
@@ -148,57 +173,6 @@ img#moi {
 		
 		label, ul {
 			display: inline-block;
-		}
-	}
-}
-
-/* mobile specific */
-body.is-mobile {
-	padding: .5em;
-	
-	#social a {
-		width: 12.5% !important;
-	}
-	
-	#moi {
-		display: none;
-	}
-	
-	#main {
-		text-align: center;
-	}
-	
-	#cv {
-		text-align: left;
-	
-		#contact .row {
-			label {
-				width: 30%;
-			}
-			
-			.info {
-				width: 65%
-			}
-		}
-		
-		#education .row .info {
-			width: 25%;
-			font-size: small;
-			
-			&:first-child {
-				width: 35%;
-			}
-		}
-		
-		#qualifications .row {
-
-			label {
-				width: 35%;
-			}
-			
-			ul, .info {
-				width: 60%;
-			}
 		}
 	}
 }
