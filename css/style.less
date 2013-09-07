@@ -1,5 +1,6 @@
 /* vars */
 @serif: Merriweather, serif;
+@faint: #555555;
 
 /* style classes */
 .title {
@@ -7,7 +8,7 @@
 }
 
 .shadow {
-  box-shadow: 0 3px 6px 0 #555555;
+  box-shadow: 0 3px 6px 0 @faint;
 }
 
 /**********/
@@ -20,14 +21,28 @@ body {
   margin: 0 auto;
 }
 
-#cv {
-  ul li {
-    list-style: none;
+#page {
+  border-bottom: 2px dotted @faint;
+
+  #cv {
+    section {
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+      border-bottom: 2px dotted @faint;
+
+      &#education div.row {
+        margin-bottom: 1em;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    ul li {
+      list-style: none;
+    }
   }
 }
 
-/*
-.row, [class*="span"] {
-  border: 1px solid;
+#footer {
+  padding-top: 1em;
 }
-*/
