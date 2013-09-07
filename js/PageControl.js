@@ -18,6 +18,7 @@ function PageControl($scope) {
             footer.fadeOut(fadeTime);
 
             if ( cv_visible ) {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
                 btn.html('View CV');
                 cv.fadeOut(fadeTime);
             } else {
