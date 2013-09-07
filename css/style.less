@@ -1,5 +1,6 @@
 /* vars */
 @serif: Merriweather, serif;
+@active: orange;
 @faint: #555555;
 
 /* style classes */
@@ -13,10 +14,14 @@
 
 /**********/
 
+a:active {
+  color: @active;
+}
+
 body {
   font-family: @serif;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -27,7 +32,6 @@ body {
   #social {
     margin-top: 1em;
     margin-bottom: 1em;
-    font-weight: bold;
     font-size: xx-large;
 
     a {
@@ -38,7 +42,7 @@ body {
         color: @faint;
       }
       &:active {
-        color: orange;
+        color: @active;
       }
     }
   }
