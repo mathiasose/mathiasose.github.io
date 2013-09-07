@@ -18,6 +18,16 @@ a:active {
   color: @active;
 }
 
+button.btn {
+  width: 100%;
+  margin: 1em 0;
+}
+
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
 body {
   font-family: @serif;
   padding-top: 1em;
@@ -33,8 +43,6 @@ body {
 }
 
 #page {
-  border-bottom: 2px dotted @faint;
-
   #social {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -73,5 +81,6 @@ body {
 }
 
 #footer {
+  border-top: 2px dotted @faint;
   padding-top: 1em;
 }
