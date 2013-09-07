@@ -24,6 +24,25 @@ body {
 #page {
   border-bottom: 2px dotted @faint;
 
+  #social {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: xx-large;
+
+    a {
+      color: #000000;
+      text-decoration: none !important;
+
+      &:hover {
+        color: @faint;
+      }
+      &:active {
+        color: orange;
+      }
+    }
+  }
+
   #cv {
     section {
       padding-bottom: 1em;

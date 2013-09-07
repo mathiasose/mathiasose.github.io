@@ -21,6 +21,7 @@ Technologies
 * Compiled LESS CSS
 ** Compiled with WinLess
 * Twitter Bootstrap 3
+* Font Awesome
 * AngularJS + jQuery
 * Merriweather font
 
