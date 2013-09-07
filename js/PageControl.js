@@ -9,20 +9,19 @@ function PageControl($scope) {
         var footer = $('#footer');
         var cv = $('#cv');
 
-        if (!btn.data('isClicked')) {
-            btn.data('isClicked', true);
-            btn.attr("disabled", true);
+        if ( !btn.attr('disabled') ) {
+            btn.attr('disabled', true);
             setTimeout(function() {
-                btn.removeData('isClicked')
-                btn.attr("disabled", false);
+                btn.attr('disabled', false);
             }, 1500);
+
             footer.fadeOut(fadeTime);
 
             if ( cv_visible ) {
-                btn.html("View CV");
+                btn.html('View CV');
                 cv.fadeOut(fadeTime);
             } else {
-                btn.html("Hide CV");
+                btn.html('Hide CV');
                 cv.fadeIn(fadeTime);
             }
 
