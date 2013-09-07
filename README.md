@@ -22,6 +22,7 @@ Technologies
 ** Compiled with WinLess
 * Twitter Bootstrap 3
 * AngularJS + jQuery
+* Merriweather font
 
 License
 -------
