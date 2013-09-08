@@ -18,11 +18,6 @@ a:active {
   color: @active;
 }
 
-button.btn {
-  width: 100%;
-  margin: 1em 0;
-}
-
 html {
   overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
@@ -76,6 +71,21 @@ body {
     }
     ul li {
       list-style: none;
+    }
+  }
+
+  #sidebar {
+    #pageControl {
+      margin: 1em 0;
+
+      button.btn {
+        width: 100%;
+        margin-bottom: .5em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

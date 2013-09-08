@@ -44,15 +44,15 @@
                     <p class="text-center alert">CV not complete. Last updated: 8th of September, 2013.</p>
                     <section id="contact">
                         <div class="row">
-                            <span class="span2 title">Address</span>
+                            <span id="address" class="span2 title">Address</span>
                             <span class="span6">Eirik Jarls gate 4, 7030 Trondheim</span>
                         </div>
                         <div class="row">
-                            <span class="span2 title">Date of birth</span>
-                            <span class="span6">September 15th, 1992</span>
+                            <span id="dateOfBirth" class="span2 title">Date of birth</span>
+                            <span id="birthdate" class="span6">September 15th, 1992</span>
                         </div>
                         <div class="row">
-                            <span class="span2 title">Telephone</span>
+                            <span id="telephone" class="span2 title">Telephone</span>
                             <span class="span6">(+47) 41 26 83 91</span>
                         </div>
                         <div class="row">
@@ -166,8 +166,9 @@
             </section>
             <section id="sidebar" class="span4">
                 <img id="moi" class="shadow" src="img/moi.jpg" />
-                <div ng-controller="PageControl">
-                    <button id="changeView" class="btn btn-inverse btn-large" ng-click="changeView()">Show CV</button>
+                <div id="pageControl" ng-controller="PageControl">
+                    <button id="changeView" class="btn btn-inverse btn-large" ng-click="changeView()"><i class="icon-expand-alt"></i> CV</button>
+                    <button id="changeLang" class="btn btn-inverse btn-large" ng-click="changeLang()">Norsk</button>
                 </div>
             </section>
         </section>
