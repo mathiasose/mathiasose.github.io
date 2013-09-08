@@ -65,7 +65,89 @@ function PageControl($scope) {
                 "id":"changeLang",
                 "en":"Norsk",
                 "no":"English"
-            }
+            },
+            {
+                "id":"educationHeader",
+                "en":"Education",
+                "no":"Utdanning"
+            },
+            {
+                "id":"internationalClass",
+                "en":"International class",
+                "no":"Internasjonal klasse"
+            },
+            {
+                "id":"friluft",
+                "en":"Outdoor Life",
+                "no":"Friluft, foto og miljø"
+            },
+            {
+                "id":"ntnu",
+                "en":"<a href=\"http://www.ntnu.edu/\">Norwegian University of Science and Technology</a>",
+                "no":"<a href=\"http://www.ntnu.no/\">NTNU</a>"
+            },
+            {
+                "id":"mtdt",
+                "en":"<a href=\"http://www.ntnu.edu/studies/mtdt\">Computer Science</a>",
+                "no":"<a href=\"http://www.ntnu.no/studier/mtdt\">Datateknikk</a>"
+            },
+            {
+                "id":"ntnuTimespan",
+                "en":"2012 - present",
+                "no":"2012 - i dag"
+            },
+            {
+                "id":"experienceHeader",
+                "en":"Experience",
+                "no":"Erfaring"
+            },
+            {
+                "id":"studentmediene",
+                "en":"Trondheim Student Media",
+                "no":"Studentmediene i Trondheim"
+            },
+            {
+                "id":"itutvikler",
+                "en":"IT developer",
+                "no":"IT-utvikler"
+            },
+            {
+                "id":"project",
+                "en":"Project",
+                "no":"Prosjekt"
+            },
+            {
+                "id":"qualificationsHeader",
+                "en":"Other qualifications",
+                "no":"Annet"
+            },
+            {
+                "id":"technologies",
+                "en":"Familiar technologies",
+                "no":"Kjennskap til teknologier"
+            },
+            {
+                "id":"languages",
+                "en":"Fluent languages",
+                "no":"Språk"
+            },
+            {
+                "id":"norwegian",
+                "en":"Norwegian",
+                "no":"Norsk"
+            },
+            {
+                "id":"english",
+                "en":"English",
+                "no":"Engelsk"
+            }/*
+             ,
+             {
+             "id":"",
+             "en":"",
+             "no":""
+             }
+             */
         ];
 
         $(lang).each(function() {
