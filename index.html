@@ -17,6 +17,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="css/bootstrap-responsive.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 
 	</head>
 	<body>
@@ -26,22 +27,31 @@
             </div>
         </noscript>
 		<section id="page" class="row">
-
             <section id="main" class="span8">
                 <h1 class="text-center">Mathias Ose</h1>
-                <!--<p class="text-center">Text text text</p>-->
-                <div id="social" class="row text-center">
-                    <a href="mailto:m@thiaso.se" title="e-mail" class="span1 icon-envelope"></a>
-                    <a href="skype:mathiasose" title="Skype" class="span1 icon-skype"></a>
-                    <a href="https://www.facebook.com/oseose" title="Facebook" class="span1 icon-facebook"></a>
-                    <a href="https://plus.google.com/u/0/113572178442664012994/" title="Google+" class="span1 icon-google-plus"></a>
-                    <a href="https://twitter.com/Oseose" title="Twitter" class="span1 icon-twitter"></a>
-                    <a href="http://www.linkedin.com/pub/mathias-ose/66/bb4/452" title="LinkedIn" class="span1 icon-linkedin"></a>
-                    <a href="https://github.com/mathiasose" title="github" class="span1 icon-github"></a>
-                    <a href="http://stackexchange.com/users/2655020/mathias-ose" title="StackExchange" class="span1 icon-stackexchange"></a>
-                </div>
+                <section id="start">
+                    <p id="hi" class="text-center">
+                        Hi, i'm Mathias Ose, and this is my web page.
+                    </p>
+                    <p id="about" class="text-center">
+                        There's not much to see here, but you can find some information about me in my CV, <br>
+                        or follow one of the icon links below to find me elsewhere on the internet.
+                    </p>
+                    <div id="social" class="row text-center">
+                        <a href="mailto:m@thiaso.se" title="e-mail" class="span1 icon-envelope"></a>
+                        <a href="skype:mathiasose" title="Skype" class="span1 icon-skype"></a>
+                        <a href="https://www.facebook.com/oseose" title="Facebook" class="span1 icon-facebook"></a>
+                        <a href="https://plus.google.com/u/0/113572178442664012994/" title="Google+" class="span1 icon-google-plus"></a>
+                        <a href="https://twitter.com/Oseose" title="Twitter" class="span1 icon-twitter"></a>
+                        <a href="http://www.linkedin.com/pub/mathias-ose/66/bb4/452" title="LinkedIn" class="span1 icon-linkedin"></a>
+                        <a href="https://github.com/mathiasose" title="github" class="span1 icon-github"></a>
+                        <a href="http://stackexchange.com/users/2655020/mathias-ose" title="StackExchange" class="span1 icon-stackexchange"></a>
+                    </div>
+                </section>
                 <section id="cv">
-                    <p class="text-center alert">CV not complete. Last updated: 8th of September, 2013.</p>
+                    <p class="text-center alert">
+                        CV not complete. Last updated: 8th of September, 2013.
+                    </p>
                     <section id="contact">
                         <div class="row">
                             <span id="address" class="span2 title">Address</span>
@@ -163,6 +173,7 @@
                 <div id="pageControl" ng-controller="PageControl">
                     <button id="changeView" class="btn btn-inverse btn-large" ng-click="changeView()"><i class="icon-expand-alt"></i> CV</button>
                     <button id="changeLang" class="btn btn-inverse btn-large" ng-click="changeLang()">Norsk</button>
+                    <button class="btn btn-inverse btn-large" onclick="window.print(); return false;">Print CV</button>
                 </div>
             </section>
         </section>

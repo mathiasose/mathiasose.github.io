@@ -9,22 +9,32 @@ function PageControl($scope) {
         var btn = $('#changeView');
         var footer = $('#footer');
         var cv = $('#cv');
+        var start = $('#start');
 
         if ( !btn.attr('disabled') ) {
             btn.attr('disabled', true);
             setTimeout(function() {
                 btn.attr('disabled', false);
-            }, 1500);
+            }, 2*fadeTime);
 
             footer.fadeOut(fadeTime);
 
             if ( cv_visible ) {
-                $("html, body").animate({ scrollTop: 0 }, "slow");
-                btn.html("<i class=\"icon-expand-alt\"></i> CV");
                 cv.fadeOut(fadeTime);
+                setTimeout(function() {
+                    start.fadeIn(fadeTime);
+                }, fadeTime);
+
+                btn.html("<i class=\"icon-expand-alt\"></i> CV");
+
+                $("html, body").animate({ scrollTop: 0 }, "slow");
             } else {
+                start.fadeOut(fadeTime);
+                setTimeout(function() {
+                    cv.fadeIn(fadeTime);
+                }, fadeTime);
+
                 btn.html("<i class=\"icon-collapse-alt\"></i> CV");
-                cv.fadeIn(fadeTime);
             }
 
             footer.fadeIn(fadeTime);
@@ -41,6 +51,16 @@ function PageControl($scope) {
         }
 
         var lang = [
+            {
+                "id":"hi",
+                "en":"Hi, i'm Mathias Ose, and this is my web page.",
+                "no":"Hei, jeg heter Mathias Ose, og dette er min webside."
+            },
+            {
+                "id":"about",
+                "en":"There's not much to see here, but you can find some information about me in my CV, <br> or follow one of the icon links below to find me elsewhere on the internet.",
+                "no":"Her er ikke så mye å se, men du kan finne litt info om meg i CVen min, <br> eller trykke på en av ikonene nedenfor for å finne meg et annet sted på internett."
+            },
             {
                 "id":"address",
                 "en":"Address",
