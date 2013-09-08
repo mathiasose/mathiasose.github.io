@@ -4,26 +4,26 @@ My personal corner of the web. Hosts information about myself, and acts as a pla
 
 Contents and functionality
 --------------------------
-* CV that is hidden by default and can be shown by the click of a button, then be dismissed again.
-* The same content available in both norwegian and english, easily switchable.
-* Special CSS for print media so that it prints as a professional-looking CV.
-** The design of the site should be primarily black/white and minimalistic so as to convert easily to print format.
+*   CV that is hidden by default and can be shown by the click of a button, then be dismissed again.
+*   The same content available in both norwegian and english, easily switchable.
+*   Special CSS for print media so that it prints as a professional-looking CV.
+    *  The design of the site should be primarily black/white and minimalistic so as to convert easily to print format.
 
 Technologies
 ------------
-* Source available on GitHub (duh)
-* Development done in IntelliJ IDE
-* Site hosted on a Raspberry Pi in my living room.
-** Running Raspbian
-** Apache webserver
-*** Remember to look into nginx eventually.
-* HTML5
-* Compiled LESS CSS
-** Compiled with WinLess
-* Twitter Bootstrap 3
-* Font Awesome
-* AngularJS + jQuery
-* Merriweather font
+*   Source available on GitHub (duh)
+*   Development done in IntelliJ IDE
+*   Site hosted on a Raspberry Pi in my living room.
+    *  Running Raspbian
+    *  Apache webserver
+        *   Remember to look into nginx eventually.
+*   HTML5
+*   Compiled LESS CSS
+    *   Compiled with WinLess
+*   Twitter Bootstrap 3
+*   Font Awesome
+*   AngularJS + jQuery
+*   Merriweather font
 
 License
 -------
