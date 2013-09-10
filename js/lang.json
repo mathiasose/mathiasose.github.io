@@ -1,0 +1,129 @@
+[
+    {
+        "id":"hi",
+        "en":"Hi, i'm Mathias Ose, and this is my web page.",
+        "no":"Hei, jeg heter Mathias Ose, og dette er min webside."
+    },
+    {
+        "id":"about",
+        "en":"There's not much to see here, but you can find some information about me in my CV, <br> or follow one of the icon links below to find me elsewhere on the internet.",
+        "no":"Her er ikke så mye å se, men du kan finne litt info om meg i CVen min, <br> eller trykke på en av ikonene nedenfor for å finne meg et annet sted på internett."
+    },
+    {
+        "id":"address",
+        "en":"Address",
+        "no":"Addresse"
+    },
+    {
+        "id":"dateOfBirth",
+        "en":"Date of birth",
+        "no":"Fødselsdato"
+    },
+    {
+        "id":"birthdate",
+        "en":"September 15th, 1992",
+        "no":"15. September 1992"
+    },
+    {
+        "id":"telephone",
+        "en":"Telephone",
+        "no":"Telefon"
+    },
+    {
+        "id":"changeLang",
+        "en":"Norsk",
+        "no":"English"
+    },
+    {
+        "id":"educationHeader",
+        "en":"Education",
+        "no":"Utdanning"
+    },
+    {
+        "id":"internationalClass",
+        "en":"International class",
+        "no":"Internasjonal klasse"
+    },
+    {
+        "id":"friluft",
+        "en":"Outdoor Life",
+        "no":"Friluft, foto og miljø"
+    },
+    {
+        "id":"ntnu",
+        "en":"<a href=\"http://www.ntnu.edu/\">Norwegian University of Science and Technology</a>",
+        "no":"<a href=\"http://www.ntnu.no/\">NTNU</a>"
+    },
+    {
+        "id":"mtdt",
+        "en":"<a href=\"http://www.ntnu.edu/studies/mtdt\">Computer Science</a>",
+        "no":"<a href=\"http://www.ntnu.no/studier/mtdt\">Datateknikk</a>"
+    },
+    {
+        "id":"ntnuTimespan",
+        "en":"2012 - present",
+        "no":"2012 - i dag"
+    },
+    {
+        "id":"experienceHeader",
+        "en":"Experience",
+        "no":"Erfaring"
+    },
+    {
+        "id":"cashier",
+        "en":"Cashier",
+        "no":"Kassemedarbeider"
+    },
+    {
+        "id":"sparTimespan",
+        "en":"Summers 2012, 2013",
+        "no":"Sommerene 2012, 2013"
+    },
+    {
+        "id":"studentmediene",
+        "en":"Trondheim Student Media",
+        "no":"Studentmediene i Trondheim"
+    },
+    {
+        "id":"itutvikler",
+        "en":"IT developer",
+        "no":"IT-utvikler"
+    },
+    {
+        "id":"project",
+        "en":"Project",
+        "no":"Prosjekt"
+    },
+    {
+        "id":"qualificationsHeader",
+        "en":"Other qualifications",
+        "no":"Annet"
+    },
+    {
+        "id":"technologies",
+        "en":"Familiar technologies",
+        "no":"Kjennskap til teknologier"
+    },
+    {
+        "id":"languages",
+        "en":"Fluent languages",
+        "no":"Språk"
+    },
+    {
+        "id":"norwegian",
+        "en":"Norwegian",
+        "no":"Norsk"
+    },
+    {
+        "id":"english",
+        "en":"English",
+        "no":"Engelsk"
+    }/*
+ ,
+ {
+ "id":"",
+ "en":"",
+ "no":""
+ }
+ */
+]
