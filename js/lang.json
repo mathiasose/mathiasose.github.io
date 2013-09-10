@@ -118,12 +118,5 @@
         "id":"english",
         "en":"English",
         "no":"Engelsk"
-    }/*
- ,
- {
- "id":"",
- "en":"",
- "no":""
- }
- */
+    }
 ]

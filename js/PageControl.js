@@ -2,6 +2,7 @@ $('#cv').hide(0);
 var cv_visible = false;
 var fadeTime = 1500;
 var cur_lang = 'en';
+var lang = null;
 
 function PageControl($scope) {
 
@@ -50,18 +51,15 @@ function PageControl($scope) {
             cur_lang = 'en';
         }
 
-        var lang = $.getJSON('lang.json');
-
-        console.log(lang);
-
-        $(lang).each(function() {
-            var id = $('#' + this.id);
-            if ( cur_lang == 'no' ){
-                id.html(this.no);
-            } else {
-                id.html(this.en);
-            }
+        lang = $.getJSON('js/lang.json', function(data) {
+            $.each(data, function(data) {
+                var id = $('#' + this.id);
+                if ( cur_lang == 'no' ){
+                    id.html(this.no);
+                } else {
+                    id.html(this.en);
+                }
+            });
         });
     };
-
 }
