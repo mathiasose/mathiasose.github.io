@@ -4,42 +4,13 @@ var fadeTime = 1500;
 var cur_lang = 'en';
 var lang = null;
 
-function PageControl($scope) {
+function PageControl($scope,$location) {
 
     $scope.changeView = function() {
-        var btn = $('#changeView');
-        var footer = $('#footer');
-        var cv = $('#cv');
-        var start = $('#start');
-
-        if ( !btn.attr('disabled') ) {
-            btn.attr('disabled', true);
-            setTimeout(function() {
-                btn.attr('disabled', false);
-            }, 2*fadeTime);
-
-            footer.fadeOut(fadeTime);
-
-            if ( cv_visible ) {
-                cv.fadeOut(fadeTime);
-                setTimeout(function() {
-                    start.fadeIn(fadeTime);
-                }, fadeTime);
-
-                btn.html("<i class=\"icon-expand-alt\"></i> CV");
-
-                $("html, body").animate({ scrollTop: 0 }, "slow");
-            } else {
-                start.fadeOut(fadeTime);
-                setTimeout(function() {
-                    cv.fadeIn(fadeTime);
-                }, fadeTime);
-
-                btn.html("<i class=\"icon-collapse-alt\"></i> CV");
-            }
-
-            footer.fadeIn(fadeTime);
-            cv_visible = !cv_visible;
+        if ( $location.path() == '/cv' ){
+            $location.path('');
+        } else {
+            $location.path('cv');
         }
     };
 
@@ -51,7 +22,7 @@ function PageControl($scope) {
             cur_lang = 'en';
         }
 
-        lang = $.getJSON('js/lang.json', function(data) {
+        $.getJSON('js/lang.json', function(data) {
             $.each(data, function(data) {
                 var id = $('#' + this.id);
                 if ( cur_lang == 'no' ){
