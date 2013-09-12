@@ -1,6 +1,3 @@
-$('#cv').hide(0);
-var cv_visible = false;
-var fadeTime = 1500;
 var cur_lang = 'en';
 var lang = null;
 
