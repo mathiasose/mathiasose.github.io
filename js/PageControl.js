@@ -9,15 +9,18 @@ function PageControl($scope,$location) {
 		} else {
 			$location.path('cv');
 		}
+        $scope.changeLang(cur_lang);
 	};
 
-	$scope.changeLang = function() {
+	$scope.changeLang = function( arg ) {
 
-		if ( cur_lang == 'en' ){
-			cur_lang = 'no';
-		} else {
-			cur_lang = 'en';
-		}
+        if ( arg == 'other' ) {
+            if ( cur_lang == 'en' ){
+                cur_lang = 'no';
+            } else {
+                cur_lang = 'en';
+            }
+        }
 
 		$.getJSON('js/lang.json', function(data) {
 			$.each(data, function(data) {
