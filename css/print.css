@@ -1,1 +1,1 @@
-button,#start,#notcomplete,#footer{display:none!important}.shadow{box-shadow:none!important}a,a:visited{color:#000;text-decoration:none}a[href]:after{content:none}
+body{padding:0}button,#start,#notcomplete,#footer{display:none!important}#printInfo{display:block!important;margin-top:1em}.shadow{box-shadow:none!important}a,a:visited{color:#000;text-decoration:none}a[href]:after,a:visited[href]:after{content:none}

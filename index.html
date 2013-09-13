@@ -22,7 +22,7 @@
 	</head>
 	<body>
 		<noscript>
-			<div id="noscript" class="alert alert-error text-center">
+			<div id="noscript" class="alert alert-warning text-center">
 				This page is going to look and work much better if you enable JavaScript.
 			</div>
 		</noscript>
@@ -32,7 +32,12 @@
 				<div data-ng-view></div>
 			</section>
 			<section id="sidebar" class="col-sm-4">
-				<img id="moi" class="img-responsive shadow" src="img/moi.jpg" />
+				<img id="moi" class="img-responsive img-rounded shadow" src="img/moi.jpg" />
+                <p id="printInfo" class="text-center alert alert-info" style="display: none;">
+                    This CV was printed from <br><br>
+                    http://ma.thiaso.se/cv <br><br>
+                    You can go there to find the most recent version.
+                </p>
 				<div id="pageControl" ng-controller="PageControl">
 					<button id="changeView" class="btn btn-lg btn-primary" ng-click="changeView()"><i class="icon-expand-alt"></i> CV</button>
 					<button id="changeLang" class="btn btn-lg btn-primary" ng-click="changeLang('other')">Norsk</button>

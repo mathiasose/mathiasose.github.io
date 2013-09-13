@@ -2,7 +2,8 @@
 @serif: Merriweather, serif;
 @black: #333333;
 @active: orange;
-@faint: #555555;
+@shadow: #555555;
+@light: #DDDDDD;
 
 /* style classes */
 .title {
@@ -10,7 +11,7 @@
 }
 
 .shadow {
-  box-shadow: 0 3px 6px 0 @faint;
+  box-shadow: 0 3px 6px 0 @shadow;
 }
 
 /**********/
@@ -57,7 +58,7 @@ h1, h2, h3 {
 	  text-decoration: none !important;
 
 	  &:hover {
-		color: @faint;
+		color: @shadow;
 	  }
 	  &:active {
 		color: @active;
@@ -66,21 +67,24 @@ h1, h2, h3 {
   }
 
   #cv {
+    & > section {
+      border-bottom: 2px dotted @shadow;
+      padding-bottom: 1em;
+    }
 	section {
-	  padding-bottom: 1em;
 	  margin-bottom: 1em;
-	  border-bottom: 2px dotted @faint;
 
-	  &#education div.row {
-		margin-bottom: 1em;
-	  }
 	  &:last-child {
 		border-bottom: none;
+        margin-bottom: 0;
 	  }
 	}
-	ul li {
-	  list-style: none;
-	}
+    .list-inline li {
+      border: 1px solid @black;
+      background-color: @light;
+      margin: 2px 0;
+      border-radius: 5px;
+    }
   }
 
   #sidebar {
@@ -101,6 +105,6 @@ h1, h2, h3 {
 }
 
 #footer {
-  border-top: 2px dotted @faint;
+  border-top: 2px dotted @shadow;
   padding-top: 1em;
 }
