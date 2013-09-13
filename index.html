@@ -5,7 +5,7 @@
 		<title>Mathias Ose</title>
 		<link rel="shortcut icon" href="img/favicon.ico" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
 		<meta name="description" content="Mathias Ose" />
@@ -15,10 +15,9 @@
 		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Merriweather' type='text/css'>
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="css/bootstrap-responsive.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+        <link href="css/bootstrap.min.css"  rel="stylesheet" type="text/css">
+		<link href="css/style.css"          rel="stylesheet" type="text/css" />
+		<link href="css/print.css"          rel="stylesheet" type="text/css" media="print" />
 
 	</head>
 	<body>
@@ -28,16 +27,16 @@
 			</div>
 		</noscript>
 		<section id="page" class="row">
-			<section id="main" class="span8">
+			<section id="main" class="col-sm-8">
 				<h1 class="text-center">Mathias Ose</h1>
 				<div data-ng-view></div>
 			</section>
-			<section id="sidebar" class="span4">
-				<img id="moi" class="shadow" src="img/moi.jpg" />
+			<section id="sidebar" class="col-sm-4">
+				<img id="moi" class="img-responsive shadow" src="img/moi.jpg" />
 				<div id="pageControl" ng-controller="PageControl">
-					<button id="changeView" class="btn btn-inverse btn-large" ng-click="changeView()"><i class="icon-expand-alt"></i> CV</button>
-					<button id="changeLang" class="btn btn-inverse btn-large" ng-click="changeLang('other')">Norsk</button>
-					<button class="btn btn-inverse btn-large" onclick="window.print(); return false;">Print CV</button>
+					<button id="changeView" class="btn btn-lg btn-primary" ng-click="changeView()"><i class="icon-expand-alt"></i> CV</button>
+					<button id="changeLang" class="btn btn-lg btn-primary" ng-click="changeLang('other')">Norsk</button>
+					<!--<button class="btn btn-inverse btn-large" onclick="window.print(); return false;">Print CV</button>-->
 				</div>
 			</section>
 		</section>

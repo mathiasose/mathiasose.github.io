@@ -20,6 +20,8 @@ function PageControl($scope,$location) {
             } else {
                 cur_lang = 'en';
             }
+        } else {
+            cur_lang = arg;
         }
 
 		$.getJSON('js/lang.json', function(data) {
