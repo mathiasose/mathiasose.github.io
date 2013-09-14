@@ -3,7 +3,7 @@
 @black: #333333;
 @active: orange;
 @shadow: #555555;
-@light: #DDDDDD;
+@light: #EEEEEE;
 
 /* style classes */
 .title {
@@ -39,6 +39,7 @@ body {
 
 h1, h2, h3 {
   line-height: 30px;
+  margin-top: 15px;
 }
 
 #noscript {
@@ -67,23 +68,34 @@ h1, h2, h3 {
   }
 
   #cv {
+    h2 {
+      font-variant: small-caps;
+    }
     & > section {
       border-bottom: 2px dotted @shadow;
       padding-bottom: 1em;
     }
 	section {
-	  margin-bottom: 1em;
-
 	  &:last-child {
 		border-bottom: none;
-        margin-bottom: 0;
 	  }
 	}
-    .list-inline li {
-      border: 1px solid @black;
-      background-color: @light;
-      margin: 2px 0;
-      border-radius: 5px;
+
+    .row {
+      margin-bottom: .5em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .list-inline {
+      margin-bottom: 0;
+      li {
+        border: 1px solid @shadow;
+        background-color: @light;
+        margin: 2px 0;
+        border-radius: 5px;
+      }
     }
   }
 
