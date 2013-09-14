@@ -15,8 +15,7 @@ Technologies
 *   Development done in IntelliJ IDE
 *   Site hosted on a Raspberry Pi in my living room.
     *  Running Raspbian
-    *  Apache webserver
-        *   Remember to look into nginx eventually.
+    *  nginx webserver
 *   HTML5
 *   Compiled LESS CSS
     *   Compiled with WinLess
