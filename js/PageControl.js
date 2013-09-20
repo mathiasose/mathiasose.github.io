@@ -1,7 +1,7 @@
 var cur_lang = 'en';
 var lang = null;
 
-function PageControl($scope,$location) {
+function PageControl($scope,$location,$http) {
 
 	$scope.changeView = function() {
 		if ( $location.path() == '/cv' ){
@@ -24,15 +24,25 @@ function PageControl($scope,$location) {
             cur_lang = arg;
         }
 
-		$.getJSON('js/lang.json', function(data) {
-			$.each(data, function(data) {
-				var id = $('#' + this.id);
-				if ( cur_lang == 'no' ){
-					id.html(this.no);
-				} else {
-					id.html(this.en);
-				}
-			});
-		});
+        var swap = function(arg) {
+            $.each(arg, function(){
+                var id = $('#' + this.id);
+                if ( cur_lang == 'no' ){
+                    id.html(this.no);
+                } else {
+                    id.html(this.en);
+                }
+            });
+        };
+
+        if ( lang ) {
+            swap(lang);
+        } else {
+            $http.get('js/lang.json')
+                .success(function (data) {
+                    lang = data;
+                    swap(lang);
+            });
+        }
 	};
 }

@@ -8,9 +8,6 @@ angular.module("mathiApp", [])
             .html5Mode(true)
             .hashPrefix('!');
         $routeProvider
-            .when('/cv',
-            {
-                templateUrl: 'cv.html'
-            })
+            .when('/cv', { templateUrl: 'cv.html' })
             .otherwise( { templateUrl: 'start.html' } );
     });
