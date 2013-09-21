@@ -1,6 +1,6 @@
 <section id="start">
 	<p class="text-center">{{ d["hi"] }}</p>
-	<p class="text-center">{{ d["about"] }}</p>
+	<p class="text-center" ng-bind-html-unsafe="d.about"></p>
 	<div id="social" class="row text-center">
 		<a href="mailto:m@thiaso.se" title="e-mail" class="col-md-1 col-md-offset-2 icon-envelope"></a>
 		<a href="skype:mathiasose" title="Skype" class="col-md-1 icon-skype"></a>
