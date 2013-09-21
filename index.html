@@ -22,9 +22,7 @@
 	</head>
 	<body ng-controller="PageControl">
 		<noscript>
-			<div id="noscript" class="alert alert-warning text-center">
-				This page will work much better if you enable JavaScript.
-			</div>
+			<div id="noscript" class="alert alert-warning text-center">This page will work much better if you enable JavaScript.</div>
 		</noscript>
 		<section id="page" class="row">
 			<section id="main" class="col-sm-8">
@@ -33,14 +31,10 @@
 			</section>
 			<section id="sidebar" class="col-sm-4">
 				<img id="moi" class="img-responsive img-rounded shadow hidden-xs" src="img/moi.jpg" />
-                <p id="printInfo" class="text-center well well-lg visible-print">
-                    This CV was printed from
-                    <br><br>
-                    http://ma.thiaso.se/cv
-                </p>
+                <p class="text-center well well-lg visible-print">{{ d["printInfo"] }}</p>
 				<div id="pageControl" class="hidden-print">
-					<button id="changeView_closed" class="btn btn-lg btn-primary" ng-click="changeView()">View CV</button>
-					<button id="changeLang" class="btn btn-lg btn-primary" ng-click="changeLang('other')">Norsk</button>
+					<button class="btn btn-lg btn-primary" ng-click="changeView()">{{ d["changeView"] }}</button>
+					<button class="btn btn-lg btn-primary" ng-click="changeLang()">{{ d["changeLang"] }}</button>
 				</div>
 			</section>
 		</section>
