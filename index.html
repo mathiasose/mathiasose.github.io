@@ -20,7 +20,7 @@
 		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 
 	</head>
-	<body>
+	<body ng-controller="PageControl">
 		<noscript>
 			<div id="noscript" class="alert alert-warning text-center">
 				This page will work much better if you enable JavaScript.
@@ -38,7 +38,7 @@
                     <br><br>
                     http://ma.thiaso.se/cv
                 </p>
-				<div id="pageControl" class="hidden-print" ng-controller="PageControl">
+				<div id="pageControl" class="hidden-print">
 					<button id="changeView_closed" class="btn btn-lg btn-primary" ng-click="changeView()">View CV</button>
 					<button id="changeLang" class="btn btn-lg btn-primary" ng-click="changeLang('other')">Norsk</button>
 				</div>
