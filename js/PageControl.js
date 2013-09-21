@@ -20,9 +20,9 @@ function PageControl($scope,$location,$http,$window) {
 
     $http.get('js/lang.json')
         .success(function (data) {
-            $.each(data, function() {
-                en_dict[this.id] = this.en;
-                no_dict[this.id] = this.no;
+            angular.forEach(data, function(data) {
+                en_dict[data.id] = data.en;
+                no_dict[data.id] = data.no;
                 buttonCheck();
             });
         });
