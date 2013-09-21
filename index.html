@@ -1,199 +1,51 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html data-ng-app="mathiApp">
 	<head>
+
 		<title>Mathias Ose</title>
 		<link rel="shortcut icon" href="img/favicon.ico" />
-		
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
 		<meta name="description" content="Mathias Ose" />
 		<meta name="robots" content="index, follow">
+		<meta name="fragment" content="!" />
 
-		<!--  <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
-		<script src="template/5grid/jquery.js"></script>
-		<script src="template/5grid/init.js?mobileUI=1"></script>
-		<script src="JS/switchView.js"></script>
-		<script src="JS/Google Analytics.js"></script>
-		
-		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oxygen' type='text/css'>
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Merriweather' type='text/css'>
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="CSS/reset.css" />
-		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
-		<link rel="stylesheet" type="text/css" href="CSS/mobile.css" media="print" />
-		<link rel="stylesheet" type="text/css" href="CSS/print.css" media="print" />
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+
 	</head>
-	<body>
+	<body ng-controller="PageControl">
 		<noscript>
-			<link rel="stylesheet" type="text/css" href="CSS/noscript.css" />
-			<div id="noscript-warning">
-				This page is going to look and work much better if you enable JavaScript.
-			</div>
+			<div id="noscript" class="alert alert-warning text-center">This page will work much better if you enable JavaScript.</div>
 		</noscript>
-		<div class="5grid-layout">
-			<div class="row">
-				<div id="main" class="8u">
-					<section id="header">
-						<h1>Mathias Ose</h1>
-						<p id="bio">
-							Student @ <a href="http://ntnu.no/studier/mtdt">NTNU</a>.
-						</p>
-						<button id="viewCV" href="#" style="display:none;">
-							View CV
-						</button>
-					</section>
-					<section id="cv">
-						CV not complete. Last updated: 17th of August, 2013.
-						<section id="contact">
-							<div class="row">
-								<label>Address</label>
-								<span class="info">Eirik Jarls gate 4, 7030 Trondheim</span>
-							</div>
-							<div class="row">
-								<label>Date of birth</label>
-								<span class="info">September 15th, 1992</span>
-							</div>
-							<div class="row">
-								<label>Telephone</label>
-								<span class="info">(+47) 41 26 83 91</span>
-							</div>
-							<div class="row">
-								<label>E-mail</label>
-								<span class="info">
-									<a href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;">&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;</a>
-								</span>
-							</div>
-						</section>
-						<section id="education">
-							<h2>Education</h2>
-							<div class="row">
-								<h3>
-									<a href="http://spjelkavik.vgs.no/">
-										Spjelkavik videregående skole
-									</a>
-								</h3>
-								<span class="info">International class</span>
-								<span class="info">2008 - 2011</span>
-							</div>
-							<div class="row">
-								<h3>
-									<a href="http://agder.fhs.no/">
-										Agder folkehøgskole
-									</a>
-								</h3>
-								<span class="info">Outdoor Life</span>
-								<span class="info">2011 - 2012</span>
-							</div>
-							<div class="row">
-								<h3>NTNU</h3>
-								<span class="info">
-									<a href="http://www.ntnu.edu/studies/mtdt">
-										Computer Science
-									</a>
-								</span>
-								<span class="info">2012 - present</span>
-								<div class="additional">
-									<h4>Passed courses</h4>
-									<ul id="courses">
-										<li><span class="title">TDT4110</span>	Information Technology, Introduction</li>
-										<li><span class="title">TDT4100</span>	Object-Oriented Programming</li>
-										<!--<li><span class="title">TDT4102*</span>	Procedural and Object-Oriented Programming</li>-->
-										<li><span class="title">TMA4140</span>	Discrete Mathematics</li>
-										<li><span class="title">TMA4100</span>	Calculus 1</li>
-										<li><span class="title">TMA4115</span>	Calculus 3</li>
-										<li><span class="title">TFE4110</span>	Digital Design and Basic Electrical Circuits</li>
-										<li><span class="title">TFY4125</span>	Physics</li>
-										<li><span class="title">EXPH0001</span>	Philosophy</li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<!-- <section id="experience">
-							<h2>Experience</h2>
-						</section> -->
-						<section id="qualifications">
-							<h2>Other qualifications</h2>
-							<div class="row">
-								<label>Familliar technologies</label>
-								<ul>
-									<li>HTML</li>
-									<li>CSS/LESS</li>
-									<li>JavaScript/jQuery</li>
-									<li>Python</li>
-									<li>Java</li>
-									<li>C/C++</li>
-									<li>C#</li>
-									<li>MediaWiki</li>
-									<li>git</li>
-									<li>Linux/Bash</li>
-									<li>Windows</li>
-								</ul>
-							</div>
-							<div class="row">
-								<label>Fluent languages</label>
-								<ul>
-									<li>Norwegian</li>
-									<li>English</li>
-								</ul>
-							</div>
-							<div class="row">
-								<label>Driving license</label>
-								<span class="info">Class B</span>
-							</div>
-						</section>
-						<section id="print">
-							<button onclick="window.print(); return false;">Print CV</button>
-						</section>
-					</section>
-					<section id="social" class="5grid">
-						<div class="row">
-							<a class="2u icon-envelope"
-								title="e-mail"
-								href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;"
-							></a>
-							<a class="2u icon-skype"
-								title="Skype"
-								href="skype:mathiasose"
-							></a>
-							<a class="2u icon-facebook"
-								title="Facebook"
-								href="https://www.facebook.com/oseose"
-							></a>
-							<a class="2u icon-google-plus"
-								title="Google+"
-								href="https://plus.google.com/u/0/113572178442664012994/"
-							></a>
-							<a class="2u icon-twitter"
-								title="Twitter"
-								href="https://twitter.com/Oseose"
-							></a>
-							<a class="2u icon-linkedin"
-								title="LinkedIn"
-								href="http://www.linkedin.com/pub/mathias-ose/66/bb4/452"
-							></a>
-							<a class="2u icon-github"
-								title="github"
-								href="https://github.com/mathiasose"
-							></a>
-							<a class="2u icon-stackexchange"
-								title="StackExchange"
-								href="http://stackexchange.com/users/2655020/mathias-ose"
-							></a>
-						</div>
-					</section>
-					<section id="footer">
-						Credits to:
-						<a href="http://n33.co/files/5grid/docs/#license">5grid by n33</a> &dash;
-						<a href="http://www.google.com/fonts/specimen/Oxygen">Oxygen font</a> &dash;
-						<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> &dash;
-						<a href="http://jquery.com/">jQuery</a> &dash;
-						<a href="http://lesscss.org/">LESS CSS</a>
-						<br />
-						<a href="https://github.com/mathiasose/ma.thiaso.se">View website source on github</a>
-					</section>
+		<section id="page" class="row">
+			<section id="main" class="col-sm-8">
+				<h1 class="text-center">Mathias Ose</h1>
+                <div data-ng-view></div>
+			</section>
+			<section id="sidebar" class="col-sm-4">
+				<img id="moi" class="img-responsive img-rounded shadow hidden-xs" src="img/moi.jpg" />
+                <p class="text-center well well-lg visible-print">{{ d["printInfo"] }}</p>
+				<div id="pageControl" class="hidden-print">
+					<button class="btn btn-lg btn-primary" ng-click="changeView()">{{ d["changeView"] }}</button>
+					<button class="btn btn-lg btn-primary" ng-click="changeLang()">{{ d["changeLang"] }}</button>
 				</div>
-				<section id="sidebar" class="4u">
-					<img id="moi" class="shadow" src="img/moi.jpg" />
-				</section>
-			</div>
-		</div>
+			</section>
+		</section>
+		<section id="footer" class="text-center hidden-print">
+			<a href="https://github.com/mathiasose/ma.thiaso.se"><i class="icon-github-sign"></i> View website source on github</a>
+		</section>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+		<script src="js/PageControl.js"></script>
+		<script src="js/app.js"></script>
+        <script src="js/Google Analytics.js"></script>
 	</body>
 </html>
