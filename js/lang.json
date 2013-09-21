@@ -80,11 +80,6 @@
         "no":"Sommerene 2012, 2013"
     },
     {
-        "id":"studentmediene",
-        "en":"Trondheim Student Media",
-        "no":"Studentmediene i Trondheim"
-    },
-    {
         "id":"itutvikler",
         "en":"IT developer",
         "no":"IT-utvikler"
@@ -118,6 +113,16 @@
         "id":"english",
         "en":"English",
         "no":"Engelsk"
+    },
+    {
+        "id":"changeView_closed",
+        "en":"View CV",
+        "no":"Se CV"
+    },
+    {
+        "id":"changeView_open",
+        "en":"Close CV",
+        "no":"Lukk CV"
     },
     {
         "id": "printInfo",

@@ -3,35 +3,40 @@ var lang = null;
 
 function PageControl($scope,$location,$http) {
 
+    var correctButton = function() {
+        if ( $location.path() == '/cv' )
+            $('#changeView_closed' ).attr("id","changeView_open");
+        else
+            $('#changeView_open' ).attr("id","changeView_closed");
+    };
+    correctButton();
+
 	$scope.changeView = function() {
-		if ( $location.path() == '/cv' ){
+        if ( $location.path() == '/cv' )
 			$location.path('');
-		} else {
+        else
 			$location.path('cv');
-		}
+        correctButton();
         $scope.changeLang(cur_lang);
 	};
 
 	$scope.changeLang = function( arg ) {
 
         if ( arg == 'other' ) {
-            if ( cur_lang == 'en' ){
+            if ( cur_lang == 'en' )
                 cur_lang = 'no';
-            } else {
+            else
                 cur_lang = 'en';
-            }
-        } else {
+        } else
             cur_lang = arg;
-        }
 
         var swap = function(arg) {
             $.each(arg, function(){
                 var id = $('#' + this.id);
-                if ( cur_lang == 'no' ){
+                if ( cur_lang == 'no' )
                     id.html(this.no);
-                } else {
+                else
                     id.html(this.en);
-                }
             });
         };
 

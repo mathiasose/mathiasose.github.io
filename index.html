@@ -13,11 +13,11 @@
 		<meta name="fragment" content="!" />
 
 		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Merriweather' type='text/css'>
-		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-        <link href="css/bootstrap.min.css"  rel="stylesheet" type="text/css">
-		<link href="css/style.css"          rel="stylesheet" type="text/css" />
-		<link href="css/print.css"          rel="stylesheet" type="text/css" media="print" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 
 	</head>
 	<body>
@@ -29,7 +29,7 @@
 		<section id="page" class="row">
 			<section id="main" class="col-sm-8">
 				<h1 class="text-center">Mathias Ose</h1>
-				<div data-ng-view></div>
+                <div data-ng-view></div>
 			</section>
 			<section id="sidebar" class="col-sm-4">
 				<img id="moi" class="img-responsive img-rounded shadow hidden-xs" src="img/moi.jpg" />
@@ -39,7 +39,7 @@
                     http://ma.thiaso.se/cv
                 </p>
 				<div id="pageControl" class="hidden-print" ng-controller="PageControl">
-					<button id="changeView" class="btn btn-lg btn-primary" ng-click="changeView()"><i class="icon-expand-alt"></i> CV</button>
+					<button id="changeView_closed" class="btn btn-lg btn-primary" ng-click="changeView()">View CV</button>
 					<button id="changeLang" class="btn btn-lg btn-primary" ng-click="changeLang('other')">Norsk</button>
 				</div>
 			</section>
