@@ -19,10 +19,10 @@ function PageControl($scope,$location,$http,$window) {
     };
 
     $http.get('js/lang.json')
-        .success(function (data) {
-            angular.forEach(data, function(data) {
-                en_dict[data.id] = data.en;
-                no_dict[data.id] = data.no;
+        .success(function (lang_list) {
+            angular.forEach(lang_list, function(lang_obj) {
+                en_dict[lang_obj.id] = lang_obj.en;
+                no_dict[lang_obj.id] = lang_obj.no;
                 buttonCheck();
             });
         });
