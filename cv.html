@@ -2,15 +2,15 @@
     <h2 class="text-center">Curriculum Vitae</h2>
 	<section id="contact">
 		<div class="row">
-			<span class="col-xs-4 col-md-3 title">{{ d["address"] }}</span>
+			<span class="col-xs-4 col-md-3 title">{{ d.address }}</span>
 			<span class="col-xs-8 col-md-9">Eirik Jarls gate 4, 7030 Trondheim</span>
 		</div>
 		<div class="row">
-			<span class="col-xs-4 col-md-3 title">{{ d["dateOfBirth"] }}</span>
-			<span id="birthdate" class="col-xs-8 col-md-9">{{ d["birthdate"] }}</span>
+			<span class="col-xs-4 col-md-3 title">{{ d.dateOfBirth }}</span>
+			<span id="birthdate" class="col-xs-8 col-md-9">{{ d.birthdate }}</span>
 		</div>
 		<div class="row">
-			<span class="col-xs-4 col-md-3 title">{{ d["telephone"] }}</span>
+			<span class="col-xs-4 col-md-3 title">{{ d.telephone }}</span>
 			<span class="col-xs-8 col-md-9">(+47) 41 26 83 91</span>
 		</div>
 		<div class="row">
@@ -21,7 +21,7 @@
 		</div>
 	</section>
 	<section id="education">
-		<h2>{{ d["educationHeader"] }}</h2>
+		<h2>{{ d.educationHeader }}</h2>
         <section>
             <h3>
                 <a href="http://spjelkavik.vgs.no/">
@@ -31,7 +31,7 @@
             <div class="row">
                 <span class="col-xs-4 col-md-3 title">
                     <a href="http://spjelkavik.vgs.no/content/view/full/510620">
-                        {{ d["internationalClass"] }}
+                        {{ d.internationalClass }}
                     </a>
                 </span>
                 <span class="col-xs-8 col-md-9">2008 - 2011</span>
@@ -46,7 +46,7 @@
             <div class="row">
                 <span class="col-xs-4 col-md-3 title">
                     <a href="http://agder.fhs.no/Linjene/Friluftsliv.aspx">
-                        {{ d["friluft"] }}
+                        {{ d.friluft }}
                     </a>
                 </span>
                 <span class="col-xs-8 col-md-9">2011 - 2012</span>
@@ -56,12 +56,12 @@
             <h3 ng-bind-html-unsafe="d.ntnu"></h3>
             <div class="row">
                 <span class="col-xs-4 col-md-3 title" ng-bind-html-unsafe="d.mtdt"></span>
-                <span class="col-xs-8 col-md-9">{{ d["ntnuTimespan"] }}</span>
+                <span class="col-xs-8 col-md-9">{{ d.ntnuTimespan }}</span>
             </div>
         </section>
 	</section>
 	<section id="experience">
-		<h2>{{ d["experienceHeader"] }}</h2>
+		<h2>{{ d.experienceHeader }}</h2>
 		<section>
 			<h3>
 				<a href="http://www.spar.no/Finn-butikk/More-og-Romsdal/SPAR-Asetorget/">
@@ -69,8 +69,8 @@
 				</a>
 			</h3>
 			<div class="row">
-				<span class="title col-xs-4 col-md-3">{{ d["cashier"] }}</span>
-				<span class="col-xs-8 col-md-9">{{ d["sparTimespan"] }}</span>
+				<span class="title col-xs-4 col-md-3">{{ d.cashier }}</span>
+				<span class="col-xs-8 col-md-9">{{ d.sparTimespan }}</span>
 			</div>
 		</section>
 		<section>
@@ -80,19 +80,19 @@
 				</a>
 			</h3>
 			<div class="row">
-				<span class="title col-xs-4 col-md-3">{{ d["itutvikler"] }}</span>
+				<span class="title col-xs-4 col-md-3">{{ d.itutvikler }}</span>
 				<span class="col-xs-8 col-md-9">2013 - present</span>
 			</div>
 			<div class="row">
-				<span class="title col-xs-4 col-md-3">{{ d["project"] }}</span>
+				<span class="title col-xs-4 col-md-3">{{ d.project }}</span>
 				<span class="col-xs-8 col-md-9"><a href="https://github.com/Studentmediene/Momus">Momus</a></span>
 			</div>
 		</section>
 	</section>
 	<section id="qualifications">
-		<h2>{{ d["qualificationsHeader"] }}</h2>
+		<h2>{{ d.qualificationsHeader }}</h2>
 		<div class="row">
-			<span class="title col-xs-4 col-md-3">{{ d["technologies"] }}</span>
+			<span class="title col-xs-4 col-md-3">{{ d.technologies }}</span>
 			<ul class="list-inline col-xs-8 col-md-9">
 				<li>HTML</li>
 				<li>CSS, LESS</li>
@@ -108,10 +108,10 @@
 			</ul>
 		</div>
 		<div class="row">
-			<span class="title col-xs-4 col-md-3">{{ d["languages"] }}</span>
+			<span class="title col-xs-4 col-md-3">{{ d.languages }}</span>
 			<ul class="list-inline col-xs-8 col-md-9">
-				<li>{{ d["norwegian"] }}</li>
-				<li>{{ d["english"] }}</li>
+				<li>{{ d.norwegian }}</li>
+				<li>{{ d.english }}</li>
 			</ul>
 		</div>
 	</section>
