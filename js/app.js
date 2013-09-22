@@ -13,8 +13,11 @@ var app = angular.module("mathiApp", [])
                     no_dict[lang_obj.id] = lang_obj.no;
                 });
             });
-        this.en_dict = en_dict;
-        this.no_dict = no_dict;
+
+        return {
+            "en_dict": en_dict,
+            "no_dict": no_dict
+        };
     })
     .config(function($routeProvider, $locationProvider) {
         $locationProvider
