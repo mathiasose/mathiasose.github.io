@@ -1,11 +1,10 @@
-function PageControl($scope,$location,$http,$window) {
+function PageControl($scope,$location,$window,Dicts) {
     // The index file and partials contain {{ expressions }} and ng-bind-html-unsafes
     // that look for content in a dictionary called $scope.d.
     // $scope.d is simply a pointer to either the norwegian or english dictionary.
 
-    // Creates the two dictionaries and populates them with data from a JSON file
-    var en_dict = {};
-    var no_dict = {};
+    var en_dict = Dicts.en_dict;
+    var no_dict = Dicts.no_dict;
 
     var buttonCheck = function(){
         // to make sure the button text matches the view
@@ -17,15 +16,6 @@ function PageControl($scope,$location,$http,$window) {
             no_dict["changeView"] = "Se CV";
         }
     };
-
-    $http.get('js/lang.json')
-        .success(function (lang_list) {
-            angular.forEach(lang_list, function(lang_obj) {
-                en_dict[lang_obj.id] = lang_obj.en;
-                no_dict[lang_obj.id] = lang_obj.no;
-                buttonCheck();
-            });
-        });
 
     // If a norwegian browser is detected, this will show the norwegian dict by default.
     // If not, it shows the english dict.
