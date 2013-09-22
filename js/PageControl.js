@@ -6,7 +6,7 @@ function PageControl($scope,$location,$window,Dicts) {
     var en_dict = Dicts.en_dict;
     var no_dict = Dicts.no_dict;
 
-    var buttonCheck = function(){
+    $scope.$on('$routeChangeSuccess', function(){
         // to make sure the button text matches the view
         if ($location.path() == '/cv') {
             en_dict["changeView"] = "Close CV";
@@ -15,7 +15,7 @@ function PageControl($scope,$location,$window,Dicts) {
             en_dict["changeView"] = "View CV";
             no_dict["changeView"] = "Se CV";
         }
-    };
+    });
 
     // If a norwegian browser is detected, this will show the norwegian dict by default.
     // If not, it shows the english dict.
@@ -39,7 +39,5 @@ function PageControl($scope,$location,$window,Dicts) {
             $location.path('');
         else
             $location.path('cv');
-        // and update the button to reflect the changed view
-        buttonCheck();
     };
 }
