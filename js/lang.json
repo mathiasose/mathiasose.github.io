@@ -121,7 +121,7 @@
     },
     {
         "id": "printInfo",
-        "en": "This CV was printed from <br><br> http://ma.thiaso.se/cv",
-        "no": "Denne CVen ble printet fra <br><br> http://ma.thiaso.se/cv"
+        "en": "This CV was printed from",
+        "no": "Denne CVen ble printet fra"
     }
 ]

@@ -1,13 +1,13 @@
-function PageControl($scope,$location,$http,$window) {
+function PageControl($scope,$location,$window,Dicts) {
     // The index file and partials contain {{ expressions }} and ng-bind-html-unsafes
     // that look for content in a dictionary called $scope.d.
-    // $scope.d is simply a pointer to either the norwegian or english dictionary.
+    // $scope.d is simply a pointer to either the norwegian or english dictionary,
+    // as defined in the Dicts service in app.js
 
-    // Creates the two dictionaries and populates them with data from a JSON file
-    var en_dict = {};
-    var no_dict = {};
+    var en_dict = Dicts.en;
+    var no_dict = Dicts.no;
 
-    var buttonCheck = function(){
+    $scope.$on('$routeChangeSuccess', function(){
         // to make sure the button text matches the view
         if ($location.path() == '/cv') {
             en_dict["changeView"] = "Close CV";
@@ -16,16 +16,7 @@ function PageControl($scope,$location,$http,$window) {
             en_dict["changeView"] = "View CV";
             no_dict["changeView"] = "Se CV";
         }
-    };
-
-    $http.get('js/lang.json')
-        .success(function (lang_list) {
-            angular.forEach(lang_list, function(lang_obj) {
-                en_dict[lang_obj.id] = lang_obj.en;
-                no_dict[lang_obj.id] = lang_obj.no;
-                buttonCheck();
-            });
-        });
+    });
 
     // If a norwegian browser is detected, this will show the norwegian dict by default.
     // If not, it shows the english dict.
@@ -49,7 +40,5 @@ function PageControl($scope,$location,$http,$window) {
             $location.path('');
         else
             $location.path('cv');
-        // and update the button to reflect the changed view
-        buttonCheck();
     };
 }
