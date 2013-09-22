@@ -14,9 +14,10 @@ var app = angular.module("mathiApp", [])
                 });
             });
 
+        // Controllers can use Dicts as a dependency to access these
         return {
-            "en_dict": en_dict,
-            "no_dict": no_dict
+            "en": en_dict,
+            "no": no_dict
         };
     })
     .config(function($routeProvider, $locationProvider) {
