@@ -6,7 +6,7 @@ var app = angular.module("mathiApp", [])
         // Creates the two dictionaries and populates them with data from a JSON file
         var en_dict = {};
         var no_dict = {};
-        $http.get('js/lang.json')
+        $http.get('js/i18n.json')
             .success(function (lang_list) {
                 angular.forEach(lang_list, function(lang_obj) {
                     en_dict[lang_obj.id] = lang_obj.en;
