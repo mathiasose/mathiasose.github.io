@@ -60,9 +60,9 @@
         "no":"<a href=\"http://www.ntnu.no/studier/mtdt\">Datateknikk</a>"
     },
     {
-        "id":"ntnuTimespan",
-        "en":"2012 - present",
-        "no":"2012 - i dag"
+        "id":"present",
+        "en":"present",
+        "no":"i dag"
     },
     {
         "id":"experienceHeader",
