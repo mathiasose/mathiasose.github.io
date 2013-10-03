@@ -75,6 +75,11 @@
         "no":"Kassemedarbeider"
     },
     {
+        "id": "theOffice",
+        "en": "Member of the office group",
+        "no": "Medlem kontorgruppen"
+    },
+    {
         "id":"sparTimespan",
         "en":"Summers 2012, 2013",
         "no":"Somrene 2012, 2013"
