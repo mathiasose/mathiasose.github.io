@@ -1,6 +1,6 @@
 /* vars */
 @serif: Merriweather, serif;
-@black: #333333;
+@dark: #333333;
 @active: orange;
 @shadow: #555555;
 @light: #EEEEEE;
@@ -39,7 +39,7 @@ body {
 
 h1, h2, h3 {
   line-height: 30px;
-  margin-top: 15px;
+  margin: 0;
 }
 
 #noscript {
@@ -49,13 +49,16 @@ h1, h2, h3 {
 }
 
 #page {
+  h1 {
+    margin-bottom: .25em;
+  }
   #social {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	font-size: xx-large;
 
 	a { // icons
-	  color: @black;
+	  color: @dark;
 	  text-decoration: none !important;
       border-radius: 1em;
       line-height: 2em;
@@ -63,11 +66,11 @@ h1, h2, h3 {
 
 	  &:hover {
 		color: @light;
-        background-color: @black;
-        border-color: @black;
+        background-color: @dark;
+        border-color: @dark;
 	  }
 	  &:active {
-		color: @black;
+		color: @dark;
         background-color: @active;
 	  }
 	}
@@ -76,16 +79,30 @@ h1, h2, h3 {
   #cv {
     h2 {
       font-variant: small-caps;
+      background-color: @dark;
+      color: @light;
+      padding: .25em .5em;
+      margin-left: -.5em;
+      margin-bottom: .25em;
+
+
+      border-bottom: 1px solid @dark;
+      &.text-center {
+        border-bottom: none;
+      }
     }
+
     & > section {
-      border-bottom: 2px dotted @shadow;
       padding-bottom: 1em;
+
+      & > section {
+        margin-bottom: .5em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
-	section {
-	  &:last-child {
-		border-bottom: none;
-	  }
-	}
 
     .row {
       margin-bottom: .5em;
@@ -112,7 +129,7 @@ h1, h2, h3 {
 	  button.btn {
         .shadow;
         border-color: @shadow;
-        background-color: @black;
+        background-color: @dark;
 		width: 100%;
 		margin-bottom: .5em;
 
@@ -129,6 +146,9 @@ h1, h2, h3 {
 		}
 	  }
 	}
+    #printInfo {
+      margin-top: .5em;
+    }
   }
 }
 
