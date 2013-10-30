@@ -16,8 +16,14 @@
 
 /**********/
 
-a:active {
-  color: @active;
+a {
+  color: @dark;
+  &:hover {
+    color: @shadow;
+  }
+  &:active {
+    color: @active;
+  }
 }
 
 html {
@@ -117,6 +123,7 @@ h1, h2, h3 {
         border: 1px solid @shadow;
         background-color: @light;
         margin: 2px 0;
+        padding: 0 5px;
         border-radius: 5px;
       }
     }
