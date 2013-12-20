@@ -1,13 +1,8 @@
 [
     {
-        "id":"hi",
-        "en":"Hi, I'm Mathias Ose, and this is my web page.",
-        "no":"Hei, jeg heter Mathias Ose, og dette er min webside."
-    },
-    {
         "id":"about",
-        "en":"There's not much to see here, but you can find some information about me in my CV, <br> or follow one of the icon links below to find me elsewhere on the internet.",
-        "no":"Her er ikke så mye å se, men du kan finne litt info om meg i CVen min, <br> eller trykke på en av ikonene nedenfor for å finne meg et annet sted på internett."
+        "en":"I am currently a student of Computer Science at the Norwegian University of Science and Technology.<br> If you'd like to know more about me you could click one one of the link icons below,<br> or look at my CV, which you can find in the sidebar on this page.",
+        "no":"Jeg studerer Datateknikk ved NTNU.<br> Hvis du vil vite mer om meg kan du klikke på en av link-ikonene nedenfor,<br> eller se på CVen min som du kan finne i sidebaren på denne siden."
     },
     {
         "id":"address",
@@ -77,7 +72,7 @@
     {
         "id": "theOffice",
         "en": "Member of the office group",
-        "no": "Medlem kontorgruppen"
+        "no": "Medlem av kontorgruppen"
     },
     {
         "id":"sparTimespan",

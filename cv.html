@@ -23,80 +23,84 @@
 	<section id="education">
 		<h2>{{ d.educationHeader }}</h2>
         <section>
-            <h3>
-                <a href="http://spjelkavik.vgs.no/">
-                    Spjelkavik videregående skole
-                </a>
-            </h3>
             <div class="row">
-                <span class="col-xs-4 col-md-3 title">
+                <span class="timespan col-xs-4 col-md-3">2008 - 2011</span>
+                <span class="col-xs-8 col-md-9">
+                    <h3>
+                        <a href="http://spjelkavik.vgs.no/">
+                            Spjelkavik videregående skole
+                        </a>
+                    </h3>
                     <a href="http://spjelkavik.vgs.no/content/view/full/510620">
                         {{ d.internationalClass }}
                     </a>
                 </span>
-                <span class="col-xs-8 col-md-9">2008 - 2011</span>
             </div>
         </section>
         <section>
-            <h3>
-                <a href="http://agder.fhs.no/">
-                    Agder folkehøgskole
-                </a>
-            </h3>
             <div class="row">
-                <span class="col-xs-4 col-md-3 title">
+                <span class="timespan col-xs-4 col-md-3">2011 - 2012</span>
+                <span class="col-xs-8 col-md-9">
+                    <h3>
+                        <a href="http://agder.fhs.no/">
+                            Agder folkehøgskole
+                        </a>
+                    </h3>
                     <a href="http://agder.fhs.no/Linjene/Friluftsliv.aspx">
                         {{ d.friluft }}
                     </a>
                 </span>
-                <span class="col-xs-8 col-md-9">2011 - 2012</span>
             </div>
         </section>
         <section>
-            <h3 ng-bind-html-unsafe="d.ntnu"></h3>
             <div class="row">
-                <span class="col-xs-4 col-md-3 title" ng-bind-html-unsafe="d.mtdt"></span>
-                <span class="col-xs-8 col-md-9">2012 - {{ d.present }}</span>
+                <span class="timespan col-xs-4 col-md-3">2012 - {{ d.present }}</span>
+                <span class="col-xs-8 col-md-9">
+                    <h3 ng-bind-html-unsafe="d.ntnu"></h3>
+                    <span ng-bind-html-unsafe="d.mtdt"></span>
+                </span>
             </div>
         </section>
 	</section>
 	<section id="experience">
 		<h2>{{ d.experienceHeader }}</h2>
         <section>
-            <h3>
-                <a href="http://www.spar.no/Finn-butikk/More-og-Romsdal/SPAR-Asetorget/">
-                    SPAR Åsetorget
-                </a>
-            </h3>
             <div class="row">
-                <span class="title col-xs-4 col-md-3">{{ d.cashier }}</span>
-                <span class="col-xs-8 col-md-9">{{ d.sparTimespan }}</span>
+                <span class="timespan col-xs-4 col-md-3">{{ d.sparTimespan }}</span>
+                <span class="col-xs-8 col-md-9">
+                    <h3>
+                        <a href="http://www.spar.no/Finn-butikk/More-og-Romsdal/SPAR-Asetorget/">
+                            SPAR Åsetorget
+                        </a>
+                    </h3>
+                    {{ d.cashier }}
+                </span>
             </div>
         </section>
         <section>
-            <h3>
-                <a href="https://abakus.no/">
-                    Abakus Linjeforening
-                </a>
-            </h3>
             <div class="row">
-                <span class="title col-xs-4 col-md-3">{{ d.theOffice }}</span>
-                <span class="col-xs-8 col-md-9">2013</span>
+                <span class="timespan col-xs-4 col-md-3">2013</span>
+                <span class="col-xs-8 col-md-9">
+                    <h3>
+                        <a href="https://abakus.no/">
+                            Abakus Linjeforening
+                        </a>
+                    </h3>
+                    {{ d.theOffice }}
+                </span>
             </div>
         </section>
 		<section>
-			<h3>
-				<a href="http://studentmediene.no/">
-                    Studentmediene i Trondheim
-				</a>
-			</h3>
 			<div class="row">
-				<span class="title col-xs-4 col-md-3">{{ d.itutvikler }}</span>
-				<span class="col-xs-8 col-md-9">2013 - {{ d.present }}</span>
-			</div>
-			<div class="row">
-				<span class="title col-xs-4 col-md-3">{{ d.project }}</span>
-				<span class="col-xs-8 col-md-9"><a href="https://github.com/Studentmediene/Momus">Momus</a></span>
+				<span class="timespan col-xs-4 col-md-3">2013 - {{ d.present }}</span>
+				<span class="col-xs-8 col-md-9">
+                    <h3>
+                        <a href="http://studentmediene.no/">
+                            Studentmediene i Trondheim
+                        </a>
+                    </h3>
+                    {{ d.itutvikler }}. {{ d.project }}:  <a href="https://github.com/Studentmediene/Momus">Momus</a>
+                </span>
 			</div>
 		</section>
 	</section>
@@ -112,7 +116,7 @@
 				<li>Java</li>
 				<li>C/C++</li>
 				<li>C#</li>
-				<li>MediaWiki</li>
+                <li>MediaWiki (and Semantic MediaWiki)</li>
 				<li>git</li>
 				<li>Linux/Bash</li>
 				<li>Windows</li>

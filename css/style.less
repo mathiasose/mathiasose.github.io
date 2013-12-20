@@ -4,6 +4,7 @@
 @active: orange;
 @shadow: #555555;
 @light: #EEEEEE;
+@faint: #999999;
 
 /* style classes */
 .title {
@@ -114,6 +115,11 @@ h1, h2, h3 {
       margin-bottom: .5em;
       &:last-child {
         margin-bottom: 0;
+      }
+      .timespan {
+        font-size: large;
+        color: @faint;
+        text-align: right;
       }
     }
 
