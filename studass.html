@@ -20,7 +20,12 @@
     }
 
     function init() {
-        renderer = new THREE.CanvasRenderer();
+        try {
+            renderer = new THREE.WebGLRenderer();
+        } catch (err) {
+            console.log(err);
+            renderer = new THREE.CanvasRenderer();
+        }
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
 
