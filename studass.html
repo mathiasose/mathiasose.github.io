@@ -4,7 +4,7 @@
 <script src="http://mrdoob.github.io/three.js/examples/fonts/helvetiker_regular.typeface.js"></script>
 <body style="overflow: hidden;">
 <script>
-    var camera, scene, renderer;
+    var camera, scene, renderer, light;
     var geometry, material, cube;
     var group, line1, line2;
 
@@ -45,12 +45,24 @@
         scene.add(line1);
         scene.add(line2);
 
-        var light = new THREE.PointLight(0xffffff);
+        light = new THREE.PointLight(0xffffff);
         light.position = new THREE.Vector3(0,100,400);
         scene.add(light);
+
+        var img = new THREE.MeshBasicMaterial({
+            map:THREE.ImageUtils.loadTexture('img/face.png')
+        });
+        img.map.needsUpdate = true;
+
+        // plane
+        var plane = new THREE.Mesh(new THREE.PlaneGeometry(69, 79),img);
+        plane.overdraw = false;
+        plane.position = new THREE.Vector3(168, 152, 0);
+        scene.add(plane);
     }
 
     function animate() {
+
         requestAnimationFrame(animate);
 
         var t = Math.floor(Date.now()/60);
@@ -66,6 +78,8 @@
 
         document.body.style.background = inv;
         renderer.setClearColor(inv);
+
+        camera.position.x = Math.sin(t/10)*10;
 
         renderer.render(scene, camera);
     }
