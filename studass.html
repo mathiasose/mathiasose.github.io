@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <title>text</title>
 <script src=http://mrdoob.github.io/three.js/build/three.min.js></script>
-<script src="http://mrdoob.github.io/three.js/examples/fonts/optimer_regular.typeface.js"></script>
+<script src="http://mrdoob.github.io/three.js/examples/fonts/helvetiker_regular.typeface.js"></script>
 <body>
 <script>
     var camera, scene, renderer;
@@ -13,7 +13,7 @@
             size: 100,
             height: 10,
             curveSegments: 2,
-            font: "optimer"
+            font: "helvetiker"
         });
 
         return new THREE.Mesh(text3d, new THREE.MeshBasicMaterial( { color: 0x42a42b, overdraw: true } ));
@@ -22,7 +22,6 @@
     function init() {
         renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setClearColorHex( 0xffffff, 1 );
         document.body.appendChild(renderer.domElement);
 
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
@@ -49,7 +48,7 @@
     function animate() {
         requestAnimationFrame(animate);
 
-        var t = Date.now();
+        var t = Math.floor(Date.now()/60);
         var r = parseInt(135 + 120 * Math.sin(0.0012*t));
         var g = parseInt(135 + 120 * Math.sin(0.001*t));
         var b = parseInt(135 + 120 * Math.cos(0.0011*t));
