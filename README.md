@@ -20,6 +20,7 @@ Technologies
 *   Compiled LESS CSS
     *   Compiled with WinLess
 *   Twitter Bootstrap 3
+    *   Flatly theme from Bootswatch
 *   Font Awesome
 *   AngularJS + jQuery
 *   Merriweather font

@@ -4,6 +4,7 @@
 @active: orange;
 @shadow: #555555;
 @light: #EEEEEE;
+@faint: #999999;
 
 /* style classes */
 .title {
@@ -16,8 +17,14 @@
 
 /**********/
 
-a:active {
-  color: @active;
+a {
+  color: @dark;
+  &:hover {
+    color: @shadow;
+  }
+  &:active {
+    color: @active;
+  }
 }
 
 html {
@@ -109,6 +116,11 @@ h1, h2, h3 {
       &:last-child {
         margin-bottom: 0;
       }
+      .timespan {
+        font-size: large;
+        color: @faint;
+        text-align: right;
+      }
     }
 
     .list-inline {
@@ -117,6 +129,7 @@ h1, h2, h3 {
         border: 1px solid @shadow;
         background-color: @light;
         margin: 2px 0;
+        padding: 0 5px;
         border-radius: 5px;
       }
     }
