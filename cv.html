@@ -24,16 +24,10 @@
 		<h2>{{ d.educationHeader }}</h2>
         <section>
             <div class="row">
-                <span class="timespan col-xs-4 col-md-3">2008 - 2011</span>
+                <span class="timespan col-xs-4 col-md-3">2012 - {{ d.present }}</span>
                 <span class="col-xs-8 col-md-9">
-                    <h3>
-                        <a href="http://spjelkavik.vgs.no/">
-                            Spjelkavik videregående skole
-                        </a>
-                    </h3>
-                    <a href="http://spjelkavik.vgs.no/content/view/full/510620">
-                        {{ d.internationalClass }}
-                    </a>
+                    <h3 ng-bind-html-unsafe="d.ntnu"></h3>
+                    <span ng-bind-html-unsafe="d.mtdt"></span>
                 </span>
             </div>
         </section>
@@ -54,16 +48,74 @@
         </section>
         <section>
             <div class="row">
-                <span class="timespan col-xs-4 col-md-3">2012 - {{ d.present }}</span>
+                <span class="timespan col-xs-4 col-md-3">2008 - 2011</span>
                 <span class="col-xs-8 col-md-9">
-                    <h3 ng-bind-html-unsafe="d.ntnu"></h3>
-                    <span ng-bind-html-unsafe="d.mtdt"></span>
+                    <h3>
+                        <a href="http://spjelkavik.vgs.no/">
+                            Spjelkavik videregående skole
+                        </a>
+                    </h3>
+                    <a href="http://spjelkavik.vgs.no/content/view/full/510620">
+                        {{ d.internationalClass }}
+                    </a>
                 </span>
             </div>
         </section>
 	</section>
 	<section id="experience">
 		<h2>{{ d.experienceHeader }}</h2>
+        <section>
+            <div class="row">
+                <span class="timespan col-xs-4 col-md-3">{{ d.springOf }} 2014</span>
+				<span class="col-xs-8 col-md-9">
+                    <h3>
+                        <a href="https://www.facebook.com/kodeklubbentrondheim">
+                            Kodeklubben Trondheim
+                        </a>
+                    </h3>
+                    CodeMaster
+                </span>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <span class="timespan col-xs-4 col-md-3">{{ d.springOf }} 2014</span>
+				<span class="col-xs-8 col-md-9">
+                    <h3>
+                        <a href="http://www.idi.ntnu.no/">
+                            {{ d.idi }}
+                        </a>
+                    </h3>
+                    {{ d.studass }} <a href="{{ d.URLtdt4100 }}">TDT4100</a>
+                </span>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <span class="timespan col-xs-4 col-md-3">2013 - {{ d.present }}</span>
+				<span class="col-xs-8 col-md-9">
+                    <h3>
+                        <a href="http://studentmediene.no/">
+                            Studentmediene i Trondheim
+                        </a>
+                    </h3>
+                    {{ d.itutvikler }}. {{ d.project }}:  <a href="https://github.com/Studentmediene/Momus">Momus</a>
+                </span>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <span class="timespan col-xs-4 col-md-3">{{ d.fallOf }} 2013</span>
+                <span class="col-xs-8 col-md-9">
+                    <h3>
+                        <a href="https://abakus.no/">
+                            Abakus Linjeforening
+                        </a>
+                    </h3>
+                    {{ d.theOffice }}
+                </span>
+            </div>
+        </section>
         <section>
             <div class="row">
                 <span class="timespan col-xs-4 col-md-3">{{ d.sparTimespan }}</span>
@@ -77,32 +129,6 @@
                 </span>
             </div>
         </section>
-        <section>
-            <div class="row">
-                <span class="timespan col-xs-4 col-md-3">2013</span>
-                <span class="col-xs-8 col-md-9">
-                    <h3>
-                        <a href="https://abakus.no/">
-                            Abakus Linjeforening
-                        </a>
-                    </h3>
-                    {{ d.theOffice }}
-                </span>
-            </div>
-        </section>
-		<section>
-			<div class="row">
-				<span class="timespan col-xs-4 col-md-3">2013 - {{ d.present }}</span>
-				<span class="col-xs-8 col-md-9">
-                    <h3>
-                        <a href="http://studentmediene.no/">
-                            Studentmediene i Trondheim
-                        </a>
-                    </h3>
-                    {{ d.itutvikler }}. {{ d.project }}:  <a href="https://github.com/Studentmediene/Momus">Momus</a>
-                </span>
-			</div>
-		</section>
 	</section>
 	<section id="qualifications">
 		<h2>{{ d.qualificationsHeader }}</h2>
