@@ -65,6 +65,11 @@
         "no":"Erfaring"
     },
     {
+        "id":"xcomweb",
+        "en":"Website developer",
+        "no":"Webansvarlig"
+    },
+    {
         "id":"springOf",
         "en":"Spring of",
         "no":"Våren"
