@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="mathiApp">
+<html data-ng-app="mathiApp" ng-cloak>
 	<head>
 
 		<title>Mathias Ose</title>
@@ -12,21 +12,24 @@
 		<meta name="robots" content="index, follow">
 		<meta name="fragment" content="!" />
 
-		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Merriweather' type='text/css'>
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather" media="all" />
 
-        <link rel="stylesheet" type="text/css" href="css/flatly.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all "/>
+        <link rel="stylesheet" type="text/css" href="css/animation.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 	</head>
 	<body ng-controller="PageControl">
-		<section id="page" class="row">
+		<section id="page" class="container row">
 			<section id="main" class="col-sm-8">
 				<h1 class="text-center">Mathias Ose</h1>
                 <noscript>
                     <div id="noscript" class="alert alert-warning text-center">This page will work much better if you enable JavaScript.</div>
                 </noscript>
-                <div data-ng-view></div>
+                <div style="position: relative;">
+                    <div ng-view class="fade"></div>
+                </div>
 			</section>
 			<section id="sidebar" class="col-sm-4">
 				<img id="moi" class="img-responsive img-rounded shadow hidden-xs" src="img/moi.jpg" />
@@ -38,9 +41,14 @@
 			</section>
 		</section>
 		<section id="footer" class="text-center hidden-print">
-			<a href="https://github.com/mathiasose/ma.thiaso.se"><i class="icon-github-sign"></i> View website source on github</a>
+			<a href="https://github.com/mathiasose/ma.thiaso.se">
+                <i class="fa fa-github"></i> View website source on github
+            </a>
 		</section>
-		<script src="js/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-sanitize.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.min.js"></script>
 		<script src="js/PageControl.js"></script>
 		<script src="js/app.js"></script>
         <script src="js/Google Analytics.js"></script>
