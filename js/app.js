@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-var app = angular.module("mathiApp", ['ngRoute', 'ngSanitize'])
+var app = angular.module("mathiApp", ['ngRoute', 'ngSanitize', 'ngAnimate'])
     .service('Dicts', function($http){
         // Creates the two dictionaries and populates them with data from a JSON file
         var en_dict = {};
