@@ -1,5 +1,5 @@
 function PageControl($scope,$location,$window,Dicts) {
-    // The index file and partials contain {{ expressions }} and ng-bind-html-unsafes
+    // The index file and partials contain {{ expressions }} and ng-bind-htmls
     // that look for content in a dictionary called $scope.d.
     // $scope.d is simply a pointer to either the norwegian or english dictionary,
     // as defined in the Dicts service in app.js
