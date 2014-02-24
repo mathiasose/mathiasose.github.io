@@ -3,15 +3,18 @@
     Slightly modified
 */
 
+@time: 1s;
+@transition: all @time ease;
+
 .fade {
     opacity: 1;
 }
 .fade.ng-enter,
 .fade.ng-leave {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
 
     position: absolute;
     top: 0;

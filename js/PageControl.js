@@ -1,3 +1,13 @@
+var timeOut;
+function scrollToTop() {
+    // http://thewebthought.blogspot.no/2012/06/javascript-smooth-scroll-to-top-of-page.html
+    if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+        window.scrollBy(0,-25);
+        timeOut=setTimeout('scrollToTop()',10);
+    }
+    else clearTimeout(timeOut);
+}
+
 function PageControl($scope,$location,$window,Dicts) {
     // The index file and partials contain {{ expressions }} and ng-bind-htmls
     // that look for content in a dictionary called $scope.d.
@@ -39,6 +49,8 @@ function PageControl($scope,$location,$window,Dicts) {
         if ($location.path() == '/cv')
             $location.path('');
         else
-            $location.path('cv');
+            $location.path('cv')
+
+        scrollToTop();
     };
 }

@@ -1,8 +1,8 @@
 [
     {
         "id":"about",
-        "en":"I am currently a student of Computer Science at the Norwegian University of Science and Technology.<br> If you'd like to know more about me you could click one one of the link icons below,<br> or look at my CV, which you can find in the sidebar on this page.",
-        "no":"Jeg studerer Datateknikk ved NTNU.<br> Hvis du vil vite mer om meg kan du klikke på en av link-ikonene nedenfor,<br> eller se på CVen min som du kan finne i sidebaren på denne siden."
+        "en":"I am currently a student of Computer Science at the Norwegian University of Science and Technology.<br> If you'd like to know more about me or contact me you could click one one of the link icons below,<br> or look at my CV, which you can find in the sidebar on this page.",
+        "no":"Jeg studerer Datateknikk ved NTNU.<br> Hvis du vil vite mer om meg eller ta kontakt kan du klikke på en av link-ikonene nedenfor,<br> eller se på CVen min som du kan finne i sidebaren på denne siden."
     },
     {
         "id":"address",
