@@ -1,10 +1,12 @@
 /* vars */
 @serif: Merriweather, serif;
 @dark: #333333;
-@active: orange;
+@active: #ffa500;
 @shadow: #555555;
 @light: #EEEEEE;
 @faint: #999999;
+
+@body-max-width: 1170px;
 
 /* style classes */
 .title {
@@ -36,7 +38,7 @@ body {
   font-family: @serif;
   padding-top: 1em;
   padding-bottom: 1em;
-  max-width: 1170px;
+  max-width: @body-max-width;
   margin: 0 auto;
 
   * {
@@ -168,4 +170,23 @@ h1, h2, h3 {
 #footer {
   border-top: 2px dotted @shadow;
   padding-top: 1em;
+}
+
+/* sticky footer */
+@media only screen {
+  @footer-height: 60px;
+  html {
+    min-height: 100%;
+    position: relative;
+  }
+  body {
+    margin-bottom: @footer-height;
+  }
+  #footer {
+    bottom: 0;
+    height: @footer-height;
+    position: absolute;
+    width: 100%;
+    max-width: @body-max-width;
+  }
 }
