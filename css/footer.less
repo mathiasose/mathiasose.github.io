@@ -1,0 +1,25 @@
+#footer {
+  border-top: 2px dotted @shadow;
+  padding-top: 1em;
+}
+
+@media only screen {
+  @footer-height: 60px;
+
+  html {
+    min-height: 100%;
+    position: relative;
+  }
+
+  body {
+    margin-bottom: @footer-height;
+  }
+
+  #footer {
+    bottom: 0;
+    height: @footer-height;
+    position: absolute;
+    width: 100%;
+    max-width: @body-max-width;
+  }
+}

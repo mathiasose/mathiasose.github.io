@@ -1,36 +1,23 @@
 /*
-    Found at http://dfsq.github.io/ngView-animation-effects/
-    Slightly modified
+    Modified from http://dfsq.github.io/ngView-animation-effects/
 */
 
-@time: 1s;
-@transition: all @time ease;
-
 .fade {
-    opacity: 1;
-}
-.fade.ng-enter,
-.fade.ng-leave {
-    -webkit-transition: @transition;
-    -moz-transition: @transition;
-    -o-transition: @transition;
-    transition: @transition;
+  .transition;
 
+  &, &.ng-enter-active, &.ng-leave {
+    opacity: 1;
+  }
+
+  &.ng-enter, &.ng-leave-active {
+    opacity: 0;
+  }
+
+  &.ng-enter, &.ng-leave {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
-}
-.fade.ng-enter {
-    opacity: 0;
-}
-.fade.ng-enter-active {
-    opacity: 1;
-}
-.fade.ng-leave {
-    opacity: 1;
-}
-.fade.ng-leave-active {
-    opacity: 0;
+  }
 }
