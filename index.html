@@ -31,12 +31,13 @@
                     This page will work much better if you enable JavaScript.
                 </div>
             </noscript>
-            <div style="position: relative;">
+            <img class="center-block img-responsive img-circle visible-xs" src="img/moi-square.jpg" />
+            <div id="ng-view-container">
                 <div ng-view class="fade"></div>
             </div>
         </section>
         <section id="sidebar" class="col-sm-4">
-            <img id="moi" class="img-responsive img-rounded shadow hidden-xs" src="img/moi.jpg" />
+            <img class="img-responsive img-rounded hidden-xs" src="img/moi.jpg" />
             <p id="printInfo" class="text-center well well-lg visible-print">
                 {{ d.printInfo }} <br><br> http://ma.thiaso.se/cv
             </p>
