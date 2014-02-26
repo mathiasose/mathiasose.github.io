@@ -1,0 +1,19 @@
+@serif: Merriweather, serif;
+@body-max-width: 1170px;
+@time: 400ms;
+@transition: all @time ease;
+
+@dark: #333333;
+@active: #ffa500;
+@shadow: #555555;
+@light: #EEEEEE;
+@faint: #999999;
+
+.title {  font-weight: bold;  }
+.shadow { box-shadow: 0 3px 6px 0 @shadow;  }
+.transition {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}

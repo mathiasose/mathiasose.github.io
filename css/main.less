@@ -1,0 +1,80 @@
+@import "//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css";
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+@import "//fonts.googleapis.com/css?family=Merriweather";
+
+@import "vars.less";
+
+@media only screen {
+  @import "animation.less";
+}
+
+@media only print {
+  @import "print.less";
+}
+
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+body {
+  &, * {
+    font-family: @serif;
+  }
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+  max-width: @body-max-width;
+  margin: 0 auto;
+
+  a {
+    color: @dark;
+
+    &:hover {
+      color: @shadow;
+    }
+
+    &:active {
+      color: @active;
+    }
+
+    &:focus {
+      color: @active;
+    }
+  }
+
+  h1, h2, h3 {
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+#page {
+  img[src*="moi"] {
+    .shadow;
+  }
+
+  #main {
+    h1 {
+      margin-bottom: .25em;
+    }
+
+    #noscript {
+      width: 100%;
+      font-size: xx-large;
+      font-weight: bold;
+    }
+
+    @import "social.less";
+
+    #ng-view-container {
+      margin-top: 1em;
+      position: relative;
+    }
+  }
+
+  @import "cv.less";
+  @import "sidebar.less";
+}
+
+@import "footer.less"; // do not nest, has stickyness that affect <html> and <body>

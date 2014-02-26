@@ -19,7 +19,7 @@
             http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css
             http://fonts.googleapis.com/css?family=Merriweather
     -->
-    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
 </head>
 <body ng-controller="PageControl">
 <section id="page" class="container">
@@ -31,12 +31,13 @@
                     This page will work much better if you enable JavaScript.
                 </div>
             </noscript>
-            <div style="position: relative;">
+            <img class="center-block img-responsive img-circle visible-xs" src="img/moi-square.jpg" />
+            <div id="ng-view-container">
                 <div ng-view class="fade"></div>
             </div>
         </section>
         <section id="sidebar" class="col-sm-4">
-            <img id="moi" class="img-responsive img-rounded shadow hidden-xs" src="img/moi.jpg" />
+            <img class="img-responsive img-rounded hidden-xs" src="img/moi.jpg" />
             <p id="printInfo" class="text-center well well-lg visible-print">
                 {{ d.printInfo }} <br><br> http://ma.thiaso.se/cv
             </p>
@@ -51,7 +52,7 @@
         </section>
     </div>
 </section>
-<section id="footer" class="text-center hidden-print">
+<section id="footer" class="clearfix text-center hidden-print">
     <a href="https://github.com/mathiasose/ma.thiaso.se">
         <i class="fa fa-github"></i> View website source on github
     </a>
