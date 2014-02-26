@@ -1,13 +1,3 @@
-var timeOut;
-function scrollToTop() {
-    // http://thewebthought.blogspot.no/2012/06/javascript-smooth-scroll-to-top-of-page.html
-    if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
-        window.scrollBy(0,-25);
-        timeOut=setTimeout('scrollToTop()',10);
-    }
-    else clearTimeout(timeOut);
-}
-
 function PageControl($scope,$location,$window,Dicts) {
     // The index file and partials contain {{ expressions }} and ng-bind-htmls
     // that look for content in a dictionary called $scope.d.
@@ -46,10 +36,24 @@ function PageControl($scope,$location,$window,Dicts) {
     $scope.changeView = function() {
         // This function is called by a button in the sidebar of index.html.
         // It will switch between the two views as configured in app.js.
-        if ($location.path() == '/cv')
+
+        // http://thewebthought.blogspot.no/2012/06/javascript-smooth-scroll-to-top-of-page.html
+        var timeOut;
+        var scrollStep = 50;
+        var time = 10;
+        function scrollToTop() {
+            if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+                window.scrollBy(0,-scrollStep);
+                timeOut=setTimeout(scrollToTop(), time);
+            }
+            else clearTimeout(timeOut);
+        }
+
+        if ($location.path() == '/cv'){
             $location.path('');
-        else
+        } else {
             $location.path('cv')
+        }
 
         scrollToTop();
     };
