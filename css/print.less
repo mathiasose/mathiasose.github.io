@@ -1,40 +1,52 @@
-body {
-  padding: 0;
-}
-
 #main h1 {
-  padding-top: 0.1cm;
+    padding-top: 0.1cm;
 }
 
 #cv h2 {
-  margin-top: -0.25cm;
-}
-
-#experience, #qualifications {
-  h2, .what {
-    margin-right: -300px;
-    width: auto;
-  }
-  .list-inline {
-    width: 14.95cm;
-  }
-}
-
-h3 {
-  font-size: 20px;
-}
-#printInfo {
-  margin-top: 1em;
-}
-
-.shadow {
-  box-shadow: none !important;
+    margin-top: -0.25cm;
 }
 
 a, a:visited {
-  text-decoration: none;
+    text-decoration: none;
 
-  &[href]:after {
-    content: none;
-  }
+    &[href]:after {
+        content: none;
+    }
+}
+
+.shadow {
+    box-shadow: none !important;
+}
+
+section#cv {
+    h2 {
+        margin-top: -0.25cm;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+
+    #work, #volunteering, #skills {
+        h2, .what {
+            margin-right: -300px;
+            width: auto;
+        }
+        .list-inline {
+            width: 14.95cm;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+#printInfo {
+    border: 1px solid lightgray;
+    margin-top: 1em;
+}
+
+#skills {
+    margin-top: -1em;
 }

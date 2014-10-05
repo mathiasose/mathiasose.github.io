@@ -3,12 +3,12 @@
 <head>
 
     <title>Mathias Ose</title>
-    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <link rel="shortcut icon" href="/img/favicon.ico"/>
 
-    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-    <meta name="description" content="Mathias Ose" />
+    <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+    <meta name="description" content="Mathias Ose"/>
     <meta name="robots" content="index, follow">
-    <meta name="fragment" content="!" />
+    <meta name="fragment" content="!"/>
 
     <!-- Enables Bootstrap responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
             http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css
             http://fonts.googleapis.com/css?family=Merriweather
     -->
-    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/main.css"/>
 </head>
 <body ng-controller="PageControl">
 <section id="page" class="container">
@@ -31,16 +31,19 @@
                     This page will work much better if you enable JavaScript.
                 </div>
             </noscript>
-            <img class="center-block img-responsive img-circle visible-xs" src="/img/moi-square.jpg" />
+            <img class="center-block img-responsive img-circle visible-xs" src="/img/moi-square.jpg"/>
+
             <div id="ng-view-container">
                 <div ng-view></div>
             </div>
         </section>
         <section id="sidebar" class="col-sm-4">
-            <img class="img-responsive img-rounded hidden-xs" src="/img/moi.jpg" />
+            <img class="img-responsive img-rounded hidden-xs" src="/img/moi.jpg"/>
+
             <p id="printInfo" class="text-center well well-lg visible-print">
                 {{ d.printInfo }} <br><br> http://ma.thiaso.se/cv
             </p>
+
             <div id="pageControl" class="hidden-print">
                 <button class="btn btn-lg btn-primary" ng-click="changeView()">
                     {{ d.changeView }}

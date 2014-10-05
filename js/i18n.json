@@ -1,103 +1,118 @@
 [
     {
-        "id":"about",
-        "en":"I am currently a student of Computer Science at the Norwegian University of Science and Technology.<br> If you'd like to know more about me or contact me you could click one one of the link icons below,<br> or look at my CV, which you can find in the sidebar on this page.",
-        "no":"Jeg studerer Datateknikk ved NTNU.<br> Hvis du vil vite mer om meg eller ta kontakt kan du klikke på en av link-ikonene nedenfor,<br> eller se på CVen min som du kan finne i sidebaren på denne siden."
+        "id": "about",
+        "en": "I am currently a student of Computer Science at the Norwegian University of Science and Technology.<br> If you'd like to know more about me or contact me you could click one one of the link icons below,<br> or look at my CV, which you can find in the sidebar on this page.",
+        "no": "Jeg studerer Datateknikk ved NTNU.<br> Hvis du vil vite mer om meg eller ta kontakt kan du klikke på en av link-ikonene nedenfor,<br> eller se på CVen min som du kan finne i sidebaren på denne siden."
     },
     {
-        "id":"address",
-        "en":"Address",
-        "no":"Adresse"
+        "id": "address",
+        "en": "Address",
+        "no": "Adresse"
     },
     {
-        "id":"dateOfBirth",
-        "en":"Date of birth",
-        "no":"Fødselsdato"
+        "id": "dateOfBirth",
+        "en": "Date of birth",
+        "no": "Fødselsdato"
     },
     {
-        "id":"birthdate",
-        "en":"September 15th, 1992",
-        "no":"15. September 1992"
+        "id": "birthdate",
+        "en": "September 15th, 1992",
+        "no": "15. September 1992"
     },
     {
-        "id":"telephone",
-        "en":"Telephone",
-        "no":"Telefon"
+        "id": "telephone",
+        "en": "Telephone",
+        "no": "Telefon"
     },
     {
-        "id":"changeLang",
-        "en":"Norsk",
-        "no":"English"
+        "id": "changeLang",
+        "en": "Norsk",
+        "no": "English"
     },
     {
-        "id":"educationHeader",
-        "en":"Education",
-        "no":"Utdanning"
+        "id": "educationHeader",
+        "en": "Education",
+        "no": "Utdanning"
     },
     {
-        "id":"internationalClass",
-        "en":"International class",
-        "no":"Internasjonal klasse"
+        "id": "internationalClass",
+        "en": "International class",
+        "no": "Internasjonal klasse"
     },
     {
-        "id":"friluft",
-        "en":"Outdoor Life",
-        "no":"Friluft, foto og miljø"
+        "id": "friluft",
+        "en": "Outdoor Life",
+        "no": "Friluft, foto og miljø"
     },
     {
-        "id":"ntnu",
-        "en":"<a href=\"http://www.ntnu.edu/\">Norwegian University of Science and Technology</a>",
-        "no":"<a href=\"http://www.ntnu.no/\">NTNU</a>"
+        "id": "ntnu",
+        "en": "<a href=\"http://www.ntnu.edu/\">Norwegian University of Science and Technology</a>",
+        "no": "<a href=\"http://www.ntnu.no/\">NTNU</a>"
     },
     {
-        "id":"mtdt",
-        "en":"<a href=\"http://www.ntnu.edu/studies/mtdt\">Computer Science</a>",
-        "no":"<a href=\"http://www.ntnu.no/studier/mtdt\">Datateknikk</a>"
+        "id": "mtdt",
+        "en": "<a href=\"http://www.ntnu.edu/studies/mtdt\">Computer Science</a> &mdash; Complex Computer Systems",
+        "no": "<a href=\"http://www.ntnu.no/studier/mtdt\">Datateknikk</a> &mdash; Algoritmer og datamaskiner (komplekse datasystemer)"
     },
     {
-        "id":"present",
-        "en":"present",
-        "no":"i dag"
+        "id": "present",
+        "en": "present",
+        "no": "i dag"
     },
     {
-        "id":"experienceHeader",
-        "en":"Experience",
-        "no":"Erfaring"
+        "id": "workHeader",
+        "en": "Work",
+        "no": "Jobb"
     },
     {
-        "id":"xcomweb",
-        "en":"Website developer",
-        "no":"Webansvarlig"
+        "id": "volunteeringHeader",
+        "en": "Volunteering",
+        "no": "Verv"
     },
     {
-        "id":"springOf",
-        "en":"Spring of",
-        "no":"Våren"
+        "id": "xcom",
+        "en": "XCOM15",
+        "no": "XCOM15"
     },
     {
-        "id":"fallOf",
-        "en":"Fall of",
-        "no":"Høsten"
+        "id": "xcomweb",
+        "en": "Committee member, web responsible",
+        "no": "Komitémedlem, webansvarlig"
     },
     {
-        "id":"idi",
-        "en":"Department of Computer and Information Science",
-        "no":"Institutt for datateknikk og informasjonsvitenskap"
+        "id": "springOf",
+        "en": "Spring of",
+        "no": "Våren"
     },
     {
-        "id":"studass",
-        "en":"Student assistant",
-        "no":"Studentassistent"
+        "id": "fallOf",
+        "en": "Fall of",
+        "no": "Høsten"
     },
     {
-        "id":"URLtdt4100",
-        "en":"http://www.ntnu.edu/studies/courses/TDT4100/",
-        "no":"http://www.ntnu.no/studier/emner/TDT4100/"
+        "id": "isleroDescription",
+        "en": "Lead developer",
+        "no": "Hovedutvikler"
     },
     {
-        "id":"cashier",
-        "en":"Cashier",
-        "no":"Kassemedarbeider"
+        "id": "idi",
+        "en": "Department of Computer and Information Science",
+        "no": "Institutt for datateknikk og informasjonsvitenskap"
+    },
+    {
+        "id": "studass",
+        "en": "Student assistant",
+        "no": "Studentassistent"
+    },
+    {
+        "id": "URLtdt4100",
+        "en": "http://www.ntnu.edu/studies/courses/TDT4100/",
+        "no": "http://www.ntnu.no/studier/emner/TDT4100/"
+    },
+    {
+        "id": "cashier",
+        "en": "Cashier",
+        "no": "Kassemedarbeider"
     },
     {
         "id": "theOffice",
@@ -105,53 +120,58 @@
         "no": "Medlem av kontorgruppen"
     },
     {
-        "id":"sparTimespan",
-        "en":"Summers 2012, 2013",
-        "no":"Somrene 2012, 2013"
+        "id": "sparTimespan",
+        "en": "Summers 2012, 2013",
+        "no": "Somrene 2012, 2013"
     },
     {
-        "id":"itutvikler",
-        "en":"IT developer",
-        "no":"IT-utvikler"
+        "id": "itutvikler",
+        "en": "IT developer",
+        "no": "IT-utvikler"
     },
     {
-        "id":"project",
-        "en":"Project",
-        "no":"Prosjekt"
+        "id": "project",
+        "en": "Project",
+        "no": "Prosjekt"
     },
     {
-        "id":"qualificationsHeader",
-        "en":"Other qualifications",
-        "no":"Annet"
+        "id": "skillsHeader",
+        "en": "Skills",
+        "no": "Ferdigheter"
     },
     {
-        "id":"technologies",
-        "en":"Familiar technologies",
-        "no":"Kjennskap til teknologier"
+        "id": "technologies",
+        "en": "Familiar technologies",
+        "no": "Kjennskap til teknologier"
     },
     {
-        "id":"languages",
-        "en":"Fluent languages",
-        "no":"Språk"
+        "id": "languages",
+        "en": "Fluent languages",
+        "no": "Språk"
     },
     {
-        "id":"norwegian",
-        "en":"Norwegian",
-        "no":"Norsk"
+        "id": "norwegian",
+        "en": "Norwegian",
+        "no": "Norsk"
     },
     {
-        "id":"english",
-        "en":"English",
-        "no":"Engelsk"
+        "id": "english",
+        "en": "English",
+        "no": "Engelsk"
     },
     {
-        "id":"changeView",
-        "en":"View CV",
-        "no":"Se CV"
+        "id": "changeView",
+        "en": "View CV",
+        "no": "Se CV"
     },
     {
         "id": "printInfo",
         "en": "This CV was printed from",
         "no": "Denne CVen ble printet fra"
+    },
+    {
+        "id": "codemaster",
+        "en": "CodeMaster (instructor)",
+        "no": "CodeMaster (instruktør)"
     }
 ]

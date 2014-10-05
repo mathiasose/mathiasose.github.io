@@ -1,176 +1,225 @@
 <section id="cv">
-    <h2 class="text-center">Curriculum Vitae</h2>
-	<section id="contact">
-		<div class="row">
-			<span class="col-xs-4 col-md-3 title">{{ d.address }}</span>
-			<span class="col-xs-8 col-md-9">Eirik Jarls gate 4, 7030 Trondheim</span>
-		</div>
-		<div class="row">
-			<span class="col-xs-4 col-md-3 title">{{ d.dateOfBirth }}</span>
-			<span id="birthdate" class="col-xs-8 col-md-9">{{ d.birthdate }}</span>
-		</div>
-		<div class="row">
-			<span class="col-xs-4 col-md-3 title">{{ d.telephone }}</span>
-			<span class="col-xs-8 col-md-9">(+47) 41 26 83 91</span>
-		</div>
-		<div class="row">
-			<span class="col-xs-4 col-md-3 title">E-mail</span>
-            <span class="col-xs-8 col-md-9">
-                <a href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;">&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;</a>
+<h2 class="text-center">Curriculum Vitae</h2>
+<section id="contact">
+    <div class="row">
+        <span class="col-xs-4 col-md-3 title">
+            {{ d.address }}
+        </span>
+        <span class="col-xs-8 col-md-9">
+            Eirik Jarls gate 4, 7030 Trondheim
+        </span>
+    </div>
+    <div class="row">
+        <span class="col-xs-4 col-md-3 title">
+            {{ d.dateOfBirth }}
+        </span>
+        <span id="birthdate" class="col-xs-8 col-md-9">
+            {{ d.birthdate }}
+        </span>
+    </div>
+    <div class="row">
+        <span class="col-xs-4 col-md-3 title">
+            {{ d.telephone }}
+        </span>
+        <span class="col-xs-8 col-md-9">
+            (+47) 41 26 83 91
+        </span>
+    </div>
+    <div class="row">
+        <span class="col-xs-4 col-md-3 title">
+            E-mail
+        </span>
+        <span class="col-xs-8 col-md-9">
+            <a href="mailto:&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;">&#109;&#064;&#116;&#104;&#105;&#097;&#115;&#111;&#046;&#115;&#101;</a>
+        </span>
+    </div>
+</section>
+
+<section id="education">
+    <h2>
+        {{ d.educationHeader }}
+    </h2>
+    <section>
+        <div class="row">
+            <span class="timespan col-xs-4 col-md-3">
+                2012 - {{ d.present }}
             </span>
-		</div>
-	</section>
-	<section id="education">
-		<h2>{{ d.educationHeader }}</h2>
-        <section>
-            <div class="row">
-                <span class="timespan col-xs-4 col-md-3">2012 - {{ d.present }}</span>
-                <span class="col-xs-8 col-md-9">
-                    <h3 ng-bind-html="d.ntnu"></h3>
-                    <span ng-bind-html="d.mtdt"></span>
-                </span>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <span class="timespan col-xs-4 col-md-3">2011 - 2012</span>
-                <span class="col-xs-8 col-md-9">
-                    <h3>
-                        <a href="http://agder.fhs.no/">
-                            Agder folkehøgskole
-                        </a>
-                    </h3>
-                    <a href="http://agder.fhs.no/Linjene/Friluftsliv.aspx">
-                        {{ d.friluft }}
+            <span class="col-xs-8 col-md-9">
+                <h3 ng-bind-html="d.ntnu"></h3>
+                <span ng-bind-html="d.mtdt"></span>
+            </span>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <span class="timespan col-xs-4 col-md-3">
+                2011 - 2012
+            </span>
+            <span class="col-xs-8 col-md-9">
+                <h3>
+                    <a href="http://agder.fhs.no/">
+                        Agder folkehøgskole
                     </a>
-                </span>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <span class="timespan col-xs-4 col-md-3">2008 - 2011</span>
-                <span class="col-xs-8 col-md-9">
-                    <h3>
-                        <a href="http://spjelkavik.vgs.no/">
-                            Spjelkavik videregående skole
-                        </a>
-                    </h3>
-                    <a href="http://spjelkavik.vgs.no/content/view/full/510620">
-                        {{ d.internationalClass }}
+                </h3>
+                <a href="http://agder.fhs.no/Linjene/Friluftsliv.aspx">
+                    {{ d.friluft }}
+                </a>
+            </span>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <span class="timespan col-xs-4 col-md-3">
+                2008 - 2011
+            </span>
+            <span class="col-xs-8 col-md-9">
+                <h3>
+                    <a href="http://spjelkavik.vgs.no/">
+                        Spjelkavik videregående skole
                     </a>
-                </span>
-            </div>
-        </section>
-	</section>
-	<section id="experience">
-		<h2>{{ d.experienceHeader }}</h2>
-        <section>
-            <div class="row">
-                <span class="timespan col-xs-4 col-md-3">2014 - {{ d.present }}</span>
-				<span class="what col-xs-8 col-md-9">
-                    <h3>
-                        <a href="http://xcom15.no/">
-                            xcom15
-                        </a>
-                    </h3>
-                    {{ d.xcomweb }}
-                </span>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <span class="timespan col-xs-4 col-md-3">{{ d.springOf }} 2014</span>
-				<span class="what col-xs-8 col-md-9">
-                    <h3>
-                        <a href="https://www.facebook.com/kodeklubbentrondheim">
-                            Kodeklubben Trondheim
-                        </a>
-                    </h3>
-                    CodeMaster
-                </span>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <span class="timespan col-xs-4 col-md-3">{{ d.springOf }} 2014</span>
-				<span class="what col-xs-8 col-md-9">
-                    <h3>
-                        <a href="http://www.idi.ntnu.no/">
-                            {{ d.idi }}
-                        </a>
-                    </h3>
-                    {{ d.studass }} <a href="{{ d.URLtdt4100 }}">TDT4100</a>
-                </span>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <span class="timespan col-xs-4 col-md-3">2013 - {{ d.present }}</span>
-				<span class="what col-xs-8 col-md-9">
-                    <h3>
-                        <a href="http://studentmediene.no/">
-                            Studentmediene i Trondheim
-                        </a>
-                    </h3>
-                    {{ d.itutvikler }}. {{ d.project }}:  <a href="https://github.com/Studentmediene/Momus">Momus</a>
-                </span>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <span class="timespan col-xs-4 col-md-3">{{ d.fallOf }} 2013</span>
-                <span class="what col-xs-8 col-md-9">
-                    <h3>
-                        <a href="https://abakus.no/">
-                            Abakus Linjeforening
-                        </a>
-                    </h3>
-                    {{ d.theOffice }}
-                </span>
-            </div>
-        </section>
-        <section>
-            <div class="row">
-                <span class="timespan col-xs-4 col-md-3">{{ d.sparTimespan }}</span>
-                <span class="what col-xs-8 col-md-9">
-                    <h3>
-                        <a href="http://www.spar.no/Finn-butikk/More-og-Romsdal/SPAR-Asetorget/">
-                            SPAR Åsetorget
-                        </a>
-                    </h3>
-                    {{ d.cashier }}
-                </span>
-            </div>
-        </section>
-	</section>
-	<section id="qualifications">
-		<h2>{{ d.qualificationsHeader }}</h2>
-		<div class="row">
-			<span class="title col-xs-4 col-md-3">{{ d.technologies }}</span>
-			<ul class="what list-inline col-xs-8 col-md-9">
-				<li>HTML</li>
-                <li>CSS</li>
-                <li>LESS</li>
-				<li>JavaScript (jQuery, AngularJS)</li>
-				<li>Python</li>
-				<li>Java</li>
-                <li>C</li>
-                <li>C++</li>
-                <li>Assembly (ARM Thumb-2)</li>
-                <li>SQL</li>
-                <li>git</li>
-                <li>vim</li>
-				<li>Linux/Bash</li>
-				<li>Windows</li>
-                <li>MediaWiki (+ Semantic MediaWiki)</li>
-			</ul>
-		</div>
-		<div class="row">
-			<span class="title col-xs-4 col-md-3">{{ d.languages }}</span>
-			<ul class="what list-inline col-xs-8 col-md-9">
-				<li>{{ d.norwegian }}</li>
-				<li>{{ d.english }}</li>
-			</ul>
-		</div>
-	</section>
+                </h3>
+                <a href="http://spjelkavik.vgs.no/content/view/full/510620">
+                    {{ d.internationalClass }}
+                </a>
+            </span>
+        </div>
+    </section>
+</section>
+
+<section id="work">
+    <h2>
+        {{ d.workHeader }}
+    </h2>
+    <section>
+        <div class="row">
+            <span class="timespan col-xs-4 col-md-3">
+                2014 - {{ d.present }}
+            </span>
+            <span class="what col-xs-8 col-md-9">
+                <h3>
+                    <a href="http://islero.com">
+                        Islero
+                    </a>
+                </h3>
+                {{ d.isleroDescription }}
+            </span>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <span class="timespan col-xs-4 col-md-3">
+                {{ d.springOf }} 2014
+            </span>
+            <span class="what col-xs-8 col-md-9">
+                <h3>
+                    <a href="http://www.idi.ntnu.no/">
+                        {{ d.idi }}
+                    </a>
+                </h3>
+                {{ d.studass }} <a href="{{ d.URLtdt4100 }}">TDT4100</a>
+            </span>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <span class="timespan col-xs-4 col-md-3">
+                {{ d.sparTimespan }}
+            </span>
+            <span class="what col-xs-8 col-md-9">
+                <h3>
+                    <a href="http://www.spar.no/Finn-butikk/More-og-Romsdal/SPAR-Asetorget/">
+                        SPAR Åsetorget
+                    </a>
+                </h3>
+                {{ d.cashier }}
+            </span>
+        </div>
+    </section>
+</section>
+
+<section id="volunteering">
+    <h2>
+        {{ d.volunteeringHeader }}
+    </h2>
+    <section>
+        <div class="row">
+            <span class="timespan col-xs-4 col-md-3">
+                2014 - {{ d.present }}
+            </span>
+            <span class="what col-xs-8 col-md-9">
+                <h3>
+                    <a href="http://xcom15.no/">
+                        {{ d.xcom }}
+                    </a>
+                </h3>
+                {{ d.xcomweb }}
+            </span>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <span class="timespan col-xs-4 col-md-3">
+                {{ d.springOf }} 2014
+            </span>
+            <span class="what col-xs-8 col-md-9">
+                <h3>
+                    <a href="https://www.facebook.com/kodeklubbentrondheim">
+                        Kodeklubben Trondheim
+                    </a>
+                </h3>
+                {{ d.codemaster }}
+            </span>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <span class="timespan col-xs-4 col-md-3">
+                2013 - {{ d.present }}
+            </span>
+            <span class="what col-xs-8 col-md-9">
+                <h3>
+                    <a href="http://studentmediene.no/">
+                        Studentmediene i Trondheim
+                    </a>
+                </h3>
+                {{ d.itutvikler }}. {{ d.project }}:
+                <a href="https://github.com/Studentmediene/Momus">Momus</a>
+            </span>
+        </div>
+    </section>
+</section>
+
+<section id="skills">
+    <h2>
+        {{ d.skillsHeader }}
+    </h2>
+
+    <div class="row">
+        <span class="title col-xs-4 col-md-3">{{ d.technologies }}</span>
+        <ul class="what list-inline col-xs-8 col-md-9">
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript (jQuery, AngularJS)</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Assembly (ARM Thumb-2)</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>LESS</li>
+            <li>git</li>
+            <li>vim</li>
+            <li>Linux/Bash</li>
+            <li>Windows</li>
+            <li>MediaWiki (+ Semantic MediaWiki)</li>
+        </ul>
+    </div>
+    <div class="row">
+        <span class="title col-xs-4 col-md-3">{{ d.languages }}</span>
+        <ul class="what list-inline col-xs-8 col-md-9">
+            <li>{{ d.norwegian }}</li>
+            <li>{{ d.english }}</li>
+        </ul>
+    </div>
+</section>
 </section>

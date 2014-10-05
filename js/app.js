@@ -2,13 +2,13 @@
 
 // Declare app level module which depends on filters, and services
 var app = angular.module("mathiApp", ['ngRoute', 'ngSanitize', 'ngAnimate'])
-    .service('Dicts', function($http){
+    .service('Dicts', function ($http) {
         // Creates the two dictionaries and populates them with data from a JSON file
         var en_dict = {};
         var no_dict = {};
         $http.get('js/i18n.json')
             .success(function (lang_list) {
-                angular.forEach(lang_list, function(lang_obj) {
+                angular.forEach(lang_list, function (lang_obj) {
                     en_dict[lang_obj.id] = lang_obj.en;
                     no_dict[lang_obj.id] = lang_obj.no;
                 });
@@ -20,11 +20,11 @@ var app = angular.module("mathiApp", ['ngRoute', 'ngSanitize', 'ngAnimate'])
             "no": no_dict
         };
     })
-    .config(function($routeProvider, $locationProvider) {
+    .config(function ($routeProvider, $locationProvider) {
         $locationProvider
             .html5Mode(true)
             .hashPrefix('!');
         $routeProvider
             .when('/cv', { templateUrl: 'cv.html' })
-            .otherwise( { templateUrl: 'start.html' } );
+            .otherwise({ templateUrl: 'start.html' });
     });
