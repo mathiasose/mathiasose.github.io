@@ -110,14 +110,19 @@
         "no": "http://www.ntnu.no/studier/emner/TDT4100/"
     },
     {
+        "id": "URLtdt4112",
+        "en": "http://www.ntnu.edu/studies/courses/TDT4112/",
+        "no": "http://www.ntnu.no/studier/emner/TDT4112/"
+    },
+    {
         "id": "cashier",
         "en": "Cashier",
         "no": "Kassemedarbeider"
     },
     {
-        "id": "theOffice",
-        "en": "Member of the office group",
-        "no": "Medlem av kontorgruppen"
+        "id": "hackerspaceJob",
+        "en": "Technical/web development",
+        "no": "Teknisk/web-utvikling"
     },
     {
         "id": "sparTimespan",
