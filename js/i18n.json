@@ -76,13 +76,18 @@
     },
     {
         "id": "xcomweb",
-        "en": "Committee member, web responsible",
-        "no": "Komitémedlem, webansvarlig"
+        "en": "Member of committee for excursion to Asia, web responsible",
+        "no": "Medlem i komité for ekskursjon til Asia, webansvarlig"
     },
     {
         "id": "springOf",
         "en": "Spring of",
         "no": "Våren"
+    },
+    {
+        "id": "summerOf",
+        "en": "Summer of",
+        "no": "Sommeren"
     },
     {
         "id": "fallOf",
@@ -91,8 +96,13 @@
     },
     {
         "id": "isleroDescription",
-        "en": "Lead developer",
-        "no": "Hovedutvikler"
+        "en": "Developer",
+        "no": "Utvikler"
+    },
+    {
+        "id": "iteraDescription",
+        "en": "Summer internship, development",
+        "no": "Sommerjob, utvikler"
     },
     {
         "id": "idi",
@@ -113,6 +123,11 @@
         "id": "URLtdt4112",
         "en": "http://www.ntnu.edu/studies/courses/TDT4112/",
         "no": "http://www.ntnu.no/studier/emner/TDT4112/"
+    },
+    {
+        "id": "URLtdt4113",
+        "en": "http://www.ntnu.edu/studies/courses/TDT4113/",
+        "no": "http://www.ntnu.no/studier/emner/TDT4113/"
     },
     {
         "id": "cashier",
