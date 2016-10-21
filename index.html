@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mathias Ose</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <style>
+    html {
+      font-family: Raleway, serif;
+    }
+
+    h1 {
+      font-size: 40pt;
+    }
+
+    h2 {
+      font-size: 30pt;
+    }
+
+    h3 {
+      font-size: 20pt;
+      margin-bottom: 0.5rem;
+    }
+
+    @media print {
+      img#portrait {
+        max-height: 6cm;
+      }
+
+      h1 {
+        font-size: 30pt;
+      }
+
+      h2 {
+        font-size: 20pt;
+      }
+
+      h3 {
+        font-size: 15pt;
+      }
+
+      section {
+        page-break-inside: avoid;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      * {
+        box-shadow: none !important;
+      }
+    }
+
+    @media not print {
+      body {
+        background-image: url('images/blu_stripes.png');
+      }
+
+      body > div.container {
+        padding: 2.5cm;
+        margin-top: 2.5cm;
+        background-image: url('images/paper_fibers.png');
+      }
+    }
+
+    a, a:visited {
+      color: black;
+    }
+
+    a:hover {
+      color: orange;
+    }
+
+    #contact .row {
+      margin-bottom: 5px;
+    }
+
+    img#portrait {
+      max-width: 200px;
+    }
+  </style>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+</head>
+
+<body>
+<div class="container z-depth-3">
+  <header>
+    <div class="row">
+      <div class="col s8">
+        <h1 style="margin-top: 0;">
+          Mathias Ose
+        </h1>
+
+        <section id="contact">
+          <div class="row">
+            <div class="col s4">
+              Address
+            </div>
+            <div class="col s8">
+              Eirik Jarls gate 4, 7030 Trondheim
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s4">
+              Date of birth
+            </div>
+            <span id="birthdate" class="col s8">
+              September 15th, 1992
+            </span>
+          </div>
+
+          <div class="row">
+            <div class="col s4">
+              Telephone
+            </div>
+            <div class="col s8">
+              (+47) 41 26 83 91
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s4">
+              E-mail
+            </div>
+            <div class="col s8">
+              <a href="mailto:m@thiaso.se">m@thiaso.se</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s4">
+              Web
+            </div>
+            <div class="col s8">
+              <a href="http://ma.thiaso.se/">ma.thiaso.se</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s4">
+              github
+            </div>
+            <div class="col s8">
+              <a href="https://github.com/mathiasose">mathiasose</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col s4">
+        <img id="portrait" class="responsive-img right z-depth-1" src="images/portrait.jpg">
+      </div>
+    </div>
+
+    <section id="education">
+      <h2>
+        Education
+      </h2>
+
+      <section>
+        <h3>
+          <a href="http://www.ntnu.edu/">
+            Norwegian University of Science and Technology
+          </a>
+
+          <span class="right">
+            2012 - 2017
+          </span>
+        </h3>
+
+        <div>
+          <a href="http://www.ntnu.edu/studies/mtdt">M.Sc. Computer Science</a> &mdash; Specialization in Complex
+          Computer Systems
+          <br>
+          <a href="https://github.com/DMPRO-2015-convolution/report/">
+            Computer Design Project 2015
+          </a>
+          <br>
+          M.Sc. project supervised by <a href="http://www.ntnu.edu/employees/nichele">Stefano Nichele</a>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <h3>
+            <a href="http://agder.fhs.no/">
+              Agder folkehøgskole
+            </a>
+
+            <span class="right">
+              2011 - 2012
+            </span>
+          </h3>
+
+          <div>
+            <a href="http://agder.fhs.no/Linjene/Friluftsliv.aspx">
+              Outdoor Life
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>
+          <a href="http://spjelkavik.vgs.no/">
+            Spjelkavik videregående skole
+          </a>
+
+          <span class="right">
+            2008 - 2011
+          </span>
+        </h3>
+
+        <div>
+          <a href="http://spjelkavik.vgs.no/content/view/full/510620">
+            International class
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <section id="work">
+      <h2>
+        Work
+      </h2>
+
+      <section>
+        <h3>
+          <a href="http://itera.no">
+            Itera
+          </a>
+
+          <span class="right">
+            2015
+          </span>
+        </h3>
+
+        <div>
+          Summer internship, development. Frontend development for bank customer.
+        </div>
+      </section>
+
+      <section>
+        <h3>
+          Islero
+
+          <span class="right">
+            2014 - 2016
+          </span>
+        </h3>
+
+        <div>
+          Full stack devops in fintech startup
+        </div>
+      </section>
+
+      <section>
+        <h3>
+          <a href="http://www.idi.ntnu.no/">
+            Department of Computer and Information Science
+          </a>
+
+          <span class="right">
+            2014, 2015
+          </span>
+        </h3>
+
+        <div>
+          Student assistant
+          <a href="http://www.ntnu.edu/studies/courses/TDT4100/">TDT4100</a>,
+          <a href="http://www.ntnu.edu/studies/courses/TDT4112/">TDT4112</a>,
+          <a href="http://www.ntnu.edu/studies/courses/TDT4113/">TDT4113</a>
+        </div>
+      </section>
+
+
+      <section>
+        <h3>
+          <a href="http://www.spar.no/Finn-butikk/More-og-Romsdal/SPAR-Asetorget/">
+            SPAR Åsetorget
+          </a>
+
+          <span class="right">
+            2012, 2013
+          </span>
+        </h3>
+
+        <div>
+          Cashier
+        </div>
+      </section>
+    </section>
+
+    <section id="volunteering">
+      <h2>
+        Volunteering
+      </h2>
+
+      <section>
+        <h3>
+          <a href="http://hackerspace.idi.ntnu.no/">
+            Hackerspace NTNU
+          </a>
+
+          <span class="right">
+            2014 - 2017
+          </span>
+        </h3>
+
+        <div>
+          Technical/web development. Django, IoT.
+        </div>
+      </section>
+
+      <section>
+        <h3>
+          XCOM15
+
+          <span class="right">
+            2014 - 2015
+          </span>
+        </h3>
+
+        <div>
+          Member of committee for excursion to Asia, web responsible. Django web app.
+        </div>
+      </section>
+
+      <section>
+        <h3>
+          <a href="https://www.facebook.com/kodeklubbentrondheim">
+            Kodeklubben Trondheim
+          </a>
+
+          <span class="right">
+            2014
+          </span>
+        </h3>
+
+        <div>
+          CodeMaster (instructor)
+        </div>
+      </section>
+
+      <section>
+        <h3>
+          <a href="http://studentmediene.no/">
+            Studentmediene i Trondheim
+          </a>
+
+          <span class="right">
+            2013 - 2015
+          </span>
+        </h3>
+
+        <div>
+          Developer, application for paper journalists. Java (Spring) backend and AngularJS frontend.
+        </div>
+      </section>
+    </section>
+
+    <section id="skills">
+      <h2>
+        Skills
+      </h2>
+
+      <section id="languages">
+        <h3>
+          Languages
+        </h3>
+
+        <div class="chip">
+          Norwegian (native)
+        </div>
+
+        <div class="chip">
+          English (near native)
+        </div>
+
+        <div class="chip">
+          German (basic)
+        </div>
+      </section>
+
+      <section id="technologies">
+        <h3>
+          Technologies
+        </h3>
+
+        <div class="chip">
+          Python
+        </div>
+
+        <div class="chip">
+          Django
+        </div>
+
+        <div class="chip">
+          Django Rest Framework
+        </div>
+
+        <div class="chip">
+          Web development
+        </div>
+
+        <div class="chip">
+          JavaScript
+        </div>
+
+        <div class="chip">
+          NodeJS
+        </div>
+
+        <div class="chip">
+          C
+        </div>
+
+        <div class="chip">
+          C++
+        </div>
+
+        <div class="chip">
+          Assembly
+        </div>
+
+        <div class="chip">
+          VHDL
+        </div>
+
+        <div class="chip">
+          git
+        </div>
+
+        <div class="chip">
+          vim
+        </div>
+      </section>
+
+      <section id="interests">
+        <h3>
+          Academic Interests
+        </h3>
+
+        <div class="chip">
+          Bio-inspired computing
+        </div>
+
+        <div class="chip">
+          Neural networks
+        </div>
+
+        <div class="chip">
+          Artificial evolution
+        </div>
+
+        <div class="chip">
+          Cellular Automata
+        </div>
+
+        <div class="chip">
+          Machine learning
+        </div>
+      </section>
+
+      <section id="hobbies">
+        <h3>
+          Hobbies
+        </h3>
+
+        <div class="chip">
+          Alpine skiing
+        </div>
+
+        <div class="chip">
+          Travelling
+        </div>
+
+        <div class="chip">
+          Maker movement
+        </div>
+
+        <div class="chip">
+          Internet of Things
+        </div>
+
+        <div class="chip">
+          Strategy games
+        </div>
+      </section>
+    </section>
+  </header>
+</div>
+</body>
+</html>
