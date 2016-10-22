@@ -31,10 +31,11 @@
       margin-bottom: 0.5rem;
     }
 
+    img#portrait {
+      max-height: 6cm;
+    }
+
     @media print {
-      img#portrait {
-        max-height: 6cm;
-      }
 
       h1 {
         font-size: 30pt;
@@ -75,6 +76,26 @@
       }
     }
 
+    @media screen and (max-width:600px) {
+      h1 {
+        font-size: 30pt;
+      }
+
+      h2 {
+        font-size: 20pt;
+      }
+
+      h3 {
+        font-size: 15pt;
+      }
+
+      body > div.container {
+        padding: 0.5cm;
+        margin-top: 0.5cm;
+        margin-bottom: 0.5cm;
+      }
+    }
+
     a, a:visited {
       color: black;
     }
@@ -85,10 +106,6 @@
 
     #contact .row {
       margin-bottom: 5px;
-    }
-
-    img#portrait {
-      max-width: 200px;
     }
 
     footer hr {
